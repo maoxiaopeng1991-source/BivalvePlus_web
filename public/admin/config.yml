@@ -1,7 +1,8 @@
 backend:
   name: github
   repo: maoxiaopeng1991-source/BivalvePlus_web
-  site_domain: brilliant-medovik-6a8369.netlify.app
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
   branch: main
 
 # Where uploaded media goes
