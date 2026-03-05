@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: maoxiaopeng1991-source/BivalvePlus_web
-  site_domain: your-netlify-site.netlify.app  # UPDATE after Netlify OAuth setup
+  site_domain: brilliant-medovik-6a8369.netlify.app
   branch: main
 
 # Where uploaded media goes
