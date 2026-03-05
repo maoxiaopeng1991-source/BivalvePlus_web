@@ -1,0 +1,437 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { t } from '../../i18n/utils';
+
+const locale = 'pt';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const teamMembers = [
+  {
+    name: 'Maoxiao Peng',
+    title: 'PhD',
+    photo: 'maoxiao-peng.jpg',
+    cienciaId: '0A1D-96B9-27EB',
+    orcid: '0000-0002-4855-1202',
+    role: 'Investigador Principal',
+  },
+  {
+    name: 'Deborah Power',
+    title: 'PhD',
+    photo: 'deborah-power.jpg',
+    cienciaId: '891A-8A44-3CAE',
+    orcid: '0000-0003-1366-0246',
+    role: 'Co-Investigadora',
+  },
+  {
+    name: 'Adelino V. M. Canário',
+    title: 'PhD',
+    photo: 'adelino-canario.jpg',
+    cienciaId: '1F1E-D3B3-F804',
+    orcid: '0000-0002-6244-6468',
+    role: 'Investigador',
+  },
+  {
+    name: 'João C. R. Cardoso',
+    title: 'PhD',
+    photo: 'joao-cardoso.jpg',
+    cienciaId: '8B16-F203-2AFC',
+    orcid: '0000-0001-7890-0170',
+    role: 'Investigador',
+  },
+  {
+    name: 'Zhi Li',
+    title: 'PhD',
+    photo: 'zhi-li.jpg',
+    cienciaId: '361E-ECE9-BC00',
+    orcid: '0000-0002-4255-4170',
+    role: 'Investigador',
+  },
+];
+
+const milestones = [
+  {
+    num: 1,
+    title: 'Perfil nutricional das populações de bivalves selvagens e de aquacultura',
+    desc: 'Caracterização e comparação do teor proteico, perfil lipídico/colesterol, vitaminas e minerais importantes (zinco e cobre) entre populações de aquacultura e selvagens para fins de seleção genética das três espécies de bivalves.',
+  },
+  {
+    num: 2,
+    title: 'Perfil genético e genomas das populações de bivalves',
+    desc: 'Caracterização da diversidade genética das populações de bivalves de aquacultura e selvagens ao longo da costa portuguesa, incluindo análise GWAS e identificação de espécies híbridas. Genoma assemblado da amêijoa Ruditapes decussatus.',
+  },
+  {
+    num: 3,
+    title: 'Caracterização sazonal dos riscos para a produção de bivalves',
+    desc: 'Monitorização de parâmetros ambientais, identificação e caracterização da dinâmica populacional de microrganismos em locais durante dois anos, para gerar um mapa anual dos principais riscos patogénicos.',
+  },
+  {
+    num: 4,
+    title: 'Perfil de resiliência das populações de bivalves',
+    desc: 'Caracterização da suscetibilidade e resiliência das espécies de bivalves de aquacultura e selvagens a doenças e stress ambiental para auxiliar a seleção de bivalves robustos para produção intensiva.',
+  },
+  {
+    num: 5,
+    title: 'Ferramentas para monitorização da segurança',
+    desc: 'Fornecer protocolos e ferramentas baseados na avaliação de ADN para detetar patogénios, prevenir e mitigar o risco de futuros surtos de doenças, evitar perdas de produção e salvaguardar populações selvagens de bivalves.',
+  },
+];
+---
+
+<Layout title={t(locale, 'nav.about')} locale={locale}>
+  <!-- Page Hero -->
+  <section class="page-hero" style={`background-image: url(${base}/images/backgrounds/bg1.png)`}>
+    <div class="page-hero__overlay"></div>
+    <h1 class="page-hero__title pixel-font">{t(locale, 'nav.about')}</h1>
+  </section>
+
+  <!-- Aims -->
+  <section class="section" id="aims">
+    <div class="container">
+      <h2 class="section__title pixel-font">{t(locale, 'about.aims_title')}</h2>
+      <div class="pixel-divider"></div>
+      <div class="aims-content pixel-box">
+        <p>O BivalvePlus visa fornecer uma avaliação holística do estado da indústria de bivalves na região do Algarve, comparando a produção na Ria Formosa com a produção em Sagres, mas também com outros locais de produção em Portugal (Setúbal e Aveiro), de forma a apoiar e promover nacionalmente o crescimento sustentável da indústria de bivalves para explorar oportunidades crescentes de mercado.</p>
+        <p>O objetivo é assegurar a utilização efetiva dos recursos de bivalves selvagens, reduzir a depleção ecológica, avaliar a capacidade das estruturas populacionais existentes para se adaptarem às alterações climáticas, e desenvolver e fornecer ferramentas para monitorização e avaliação de riscos ligados à saúde e resiliência dos bivalves, apoiando assim o desenvolvimento económico desta indústria e preservando a biodiversidade e ecossistemas únicos de Portugal, promovendo a economia azul.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Basic Information -->
+  <section class="section section--alt" id="basic-info">
+    <div class="container">
+      <h2 class="section__title pixel-font">{t(locale, 'about.basic_info_title')}</h2>
+      <div class="pixel-divider"></div>
+      <div class="info-grid">
+        <div class="info-card pixel-box">
+          <span class="info-card__label pixel-font">{t(locale, 'about.duration')}</span>
+          <span class="info-card__value">3 anos (Maio 2025 – Abril 2028)</span>
+        </div>
+        <div class="info-card pixel-box">
+          <span class="info-card__label pixel-font">{t(locale, 'about.budget')}</span>
+          <span class="info-card__value">228.960,00 EUR</span>
+        </div>
+        <div class="info-card pixel-box">
+          <span class="info-card__label pixel-font">{t(locale, 'about.funding')}</span>
+          <span class="info-card__value">Fundação para a Ciência e a Tecnologia (FCT)</span>
+        </div>
+        <div class="info-card pixel-box">
+          <span class="info-card__label pixel-font">{t(locale, 'about.coordinator')}</span>
+          <span class="info-card__value">Universidade do Algarve – Centro de Ciências do Mar (CCMAR)</span>
+        </div>
+        <div class="info-card pixel-box">
+          <span class="info-card__label pixel-font">{t(locale, 'about.reference')}</span>
+          <span class="info-card__value">2023.17014.ICDT</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Information -->
+  <section class="section" id="project-info">
+    <div class="container">
+      <h2 class="section__title pixel-font">{t(locale, 'about.project_info_title')}</h2>
+      <div class="pixel-divider"></div>
+
+      <div class="project-block">
+        <h3 class="project-block__label pixel-font">{t(locale, 'about.title_pt')}</h3>
+        <p class="project-block__text"><em>Ferramentas tecnológicas para a resiliência e segurança de bivalves marinhos de aquacultura e selvagens e aumento da sua produção em Portugal.</em></p>
+      </div>
+
+      <div class="project-block">
+        <h3 class="project-block__label pixel-font">{t(locale, 'about.title_en')}</h3>
+        <p class="project-block__text"><em>Technological tools for resilience and safety of aquaculture and wild marine bivalve and scale-up production in Portugal.</em></p>
+      </div>
+
+      <div class="project-block">
+        <h3 class="project-block__label pixel-font">{t(locale, 'about.abstract')}</h3>
+        <p class="project-block__text">O impacto da indústria de bivalves e os riscos ambientais associados são pouco compreendidos em Portugal. O projeto irá caracterizar a estrutura genética e diversidade, suscetibilidade a doenças e riscos ambientais de bivalves selvagens e de aquacultura. Serão estabelecidas estratégias de gestão para o crescimento ambientalmente compatível da aquacultura de bivalves para três espécies icónicas e economicamente importantes: amêijoas (<em>Ruditapes decussatus</em> e <em>Ruditapes philippinarum</em>), mexilhões (<em>Mytilus galloprovincialis</em>) e ostras (<em>Magallana gigas</em>).</p>
+      </div>
+
+      <div class="project-block">
+        <h3 class="project-block__label pixel-font">{t(locale, 'about.objectives')}</h3>
+        <div class="project-block__text">
+          <p>Os objetivos do projeto são ambiciosos e irão avançar o estado da arte da genética populacional de bivalves, genómica, resiliência, patogénios e bivalves selvagens e de aquacultura. Os principais objetivos são:</p>
+          <ol>
+            <li>Estabelecer diretrizes para a gestão da produção sustentável na aquacultura de bivalves</li>
+            <li>Identificar os principais riscos biológicos e não-biológicos associados à produção</li>
+            <li>Disponibilizar ferramentas de ponta para monitorização em tempo real do estado de saúde, qualidade e segurança de bivalves comercialmente importantes</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="project-block">
+        <h3 class="project-block__label pixel-font">{t(locale, 'about.milestones')}</h3>
+        <div class="milestones-list">
+          {milestones.map((ms) => (
+            <div class="milestone-card pixel-box">
+              <div class="milestone-card__num pixel-font">M{ms.num}</div>
+              <div class="milestone-card__body">
+                <h4 class="milestone-card__title">{ms.title}</h4>
+                <p class="milestone-card__desc">{ms.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Members -->
+  <section class="section section--alt" id="team">
+    <div class="container">
+      <h2 class="section__title pixel-font">{t(locale, 'about.team_title')}</h2>
+      <div class="pixel-divider"></div>
+      <div class="team-grid">
+        {teamMembers.map((member) => (
+          <div class="team-card pixel-box">
+            <img
+              src={`${base}/images/team/${member.photo}`}
+              alt={member.name}
+              class="team-card__photo"
+            />
+            <div class="team-card__info">
+              <h3 class="team-card__name">{member.name}</h3>
+              <p class="team-card__role">{member.role}</p>
+              <div class="team-card__links">
+                <a
+                  href={`https://www.cienciavitae.pt/${member.cienciaId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="team-card__link"
+                >
+                  Ciência ID
+                </a>
+                <a
+                  href={`https://orcid.org/${member.orcid}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="team-card__link"
+                >
+                  ORCID
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Stakeholders -->
+  <section class="section" id="stakeholders">
+    <div class="container">
+      <h2 class="section__title pixel-font">{t(locale, 'about.stakeholders_title')}</h2>
+      <div class="pixel-divider"></div>
+      <div class="stakeholders-grid">
+        <div class="stakeholder-card pixel-box">
+          <div class="stakeholder-card__icon pixel-font">&#x1F393;</div>
+          <p>Investigadores em biologia marinha, moluscos e ecologia</p>
+        </div>
+        <div class="stakeholder-card pixel-box">
+          <div class="stakeholder-card__icon pixel-font">&#x1F41A;</div>
+          <p>Produtores e comerciantes de bivalves</p>
+        </div>
+        <div class="stakeholder-card pixel-box">
+          <div class="stakeholder-card__icon pixel-font">&#x1F30D;</div>
+          <p>Organizações de proteção ambiental</p>
+        </div>
+        <div class="stakeholder-card pixel-box">
+          <div class="stakeholder-card__icon pixel-font">&#x1F3DB;</div>
+          <p>Agências governamentais relevantes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-hero {
+    position: relative;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+  }
+  .page-hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .page-hero__title {
+    position: relative;
+    z-index: 2;
+    color: var(--color-white);
+    font-size: 1.3rem;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
+  }
+  .section {
+    padding: var(--space-2xl) 0;
+  }
+  .section--alt {
+    background: #f5f3ef;
+  }
+  .section__title {
+    font-size: 0.85rem;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--space-sm);
+  }
+  .aims-content {
+    padding: var(--space-lg);
+    line-height: 1.8;
+    font-size: 0.95rem;
+  }
+  .aims-content p {
+    margin-bottom: var(--space-md);
+  }
+  .aims-content p:last-child {
+    margin-bottom: 0;
+  }
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
+  }
+  .info-card {
+    padding: var(--space-md) var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+  .info-card__label {
+    font-size: 0.5rem;
+    color: var(--color-primary);
+    text-transform: uppercase;
+  }
+  .info-card__value {
+    font-size: 0.95rem;
+    color: var(--color-text);
+  }
+  .project-block {
+    margin-bottom: var(--space-xl);
+  }
+  .project-block__label {
+    font-size: 0.55rem;
+    color: var(--color-secondary);
+    margin-bottom: var(--space-sm);
+    text-transform: uppercase;
+  }
+  .project-block__text {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+  .project-block__text ol {
+    padding-left: var(--space-lg);
+    margin-top: var(--space-sm);
+  }
+  .project-block__text li {
+    margin-bottom: var(--space-sm);
+  }
+  .milestones-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+  }
+  .milestone-card {
+    display: flex;
+    gap: var(--space-lg);
+    padding: var(--space-md) var(--space-lg);
+    align-items: flex-start;
+  }
+  .milestone-card__num {
+    font-size: 0.7rem;
+    color: var(--color-primary);
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--color-primary);
+  }
+  .milestone-card__title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: var(--space-xs);
+    color: var(--color-text);
+  }
+  .milestone-card__desc {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: var(--color-text-light);
+  }
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+  }
+  .team-card {
+    text-align: center;
+    padding: var(--space-lg) var(--space-md);
+  }
+  .team-card__photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 3px solid var(--color-primary);
+    margin-bottom: var(--space-md);
+  }
+  .team-card__name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: var(--space-xs);
+  }
+  .team-card__role {
+    font-size: 0.8rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--space-sm);
+  }
+  .team-card__links {
+    display: flex;
+    gap: var(--space-sm);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .team-card__link {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    transition: all 0.2s;
+  }
+  .team-card__link:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+  }
+  .stakeholders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
+  }
+  .stakeholder-card {
+    text-align: center;
+    padding: var(--space-lg);
+  }
+  .stakeholder-card__icon {
+    font-size: 2rem;
+    margin-bottom: var(--space-sm);
+  }
+  .stakeholder-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  @media (max-width: 768px) {
+    .milestone-card {
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+    .team-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

@@ -1,0 +1,171 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import EventCard from '../../../components/EventCard.astro';
+import EventTabs from '../../../components/EventTabs.astro';
+import SamplingMap from '../../../components/SamplingMap.astro';
+import { t } from '../../../i18n/utils';
+import { getCollection } from 'astro:content';
+import samplingData from '../../../data/sampling-markers.json';
+
+const locale = 'en';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// Get all events for this locale
+const allEvents = await getCollection('events', ({ data }) => data.locale === locale);
+
+// Sort by date descending
+allEvents.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+// Group by category
+const categories = ['sampling', 'experiment', 'dissemination', 'conference', 'workshop'] as const;
+const eventsByCategory = Object.fromEntries(
+  categories.map(cat => [cat, allEvents.filter(e => e.data.category === cat)])
+);
+
+// Sampling map data (per-species markers from JSON)
+const { species: speciesConfig, markers: samplingMarkers } = samplingData;
+
+// Tab labels
+const tabCategories = categories.map(key => ({
+  key,
+  label: t(locale, `nav_events.${key}`),
+}));
+---
+
+<Layout title={t(locale, 'nav.events')} locale={locale}>
+  <!-- Page Hero -->
+  <section class="page-hero" style={`background-image: url(${base}/images/backgrounds/bg2.png)`}>
+    <div class="page-hero__overlay"></div>
+    <h1 class="page-hero__title pixel-font">{t(locale, 'events.page_title')}</h1>
+  </section>
+
+  <!-- Tabs + Content -->
+  <section class="section">
+    <div class="container">
+      <EventTabs categories={tabCategories} activeCategory="sampling" />
+
+      {categories.map((cat) => (
+        <div class={`tab-panel ${cat === 'sampling' ? 'tab-panel--active' : ''}`} data-panel={cat}>
+          {/* Sampling tab has a map */}
+          {cat === 'sampling' && samplingMarkers.length > 0 && (
+            <SamplingMap species={speciesConfig} markers={samplingMarkers} title={t(locale, 'events.sampling_map_title')} />
+          )}
+
+          {eventsByCategory[cat].length > 0 ? (
+            <div class="events-grid">
+              {eventsByCategory[cat].map((event) => (
+                  <EventCard
+                    title={event.data.title}
+                    date={event.data.date}
+                    description={event.data.description}
+                    image={event.data.image}
+                  />
+              ))}
+            </div>
+          ) : (
+            <p class="no-events pixel-font">{t(locale, 'events.no_events')}</p>
+          )}
+        </div>
+      ))}
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-hero {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+  }
+  .page-hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+  }
+  .page-hero__title {
+    position: relative;
+    z-index: 2;
+    color: var(--color-white);
+    font-size: 1.3rem;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.5);
+  }
+
+  .tab-panel {
+    display: none;
+  }
+  .tab-panel--active {
+    display: block;
+  }
+
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .no-events {
+    text-align: center;
+    font-size: 0.6rem;
+    color: var(--color-neutral);
+    padding: 3rem 0;
+  }
+
+  @media (max-width: 768px) {
+    .events-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  // Tab switching logic
+  document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.event-tab');
+    const panels = document.querySelectorAll('.tab-panel');
+
+    function switchTab(category: string) {
+      tabs.forEach(tab => {
+        const isActive = tab.getAttribute('data-category') === category;
+        tab.classList.toggle('event-tab--active', isActive);
+        tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      });
+
+      panels.forEach(panel => {
+        const isActive = panel.getAttribute('data-panel') === category;
+        panel.classList.toggle('tab-panel--active', isActive);
+      });
+
+      // Update URL hash
+      history.replaceState(null, '', `#${category}`);
+
+      // Dispatch custom event for map initialization
+      document.dispatchEvent(new CustomEvent('tab-switched', { detail: category }));
+    }
+
+    // Attach click handlers
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const category = tab.getAttribute('data-category');
+        if (category) switchTab(category);
+      });
+    });
+
+    // Handle initial hash
+    const hash = window.location.hash.replace('#', '');
+    if (hash && ['sampling', 'experiment', 'dissemination', 'conference', 'workshop'].includes(hash)) {
+      switchTab(hash);
+    }
+
+    // Handle hash changes (e.g., from header dropdown links)
+    window.addEventListener('hashchange', () => {
+      const newHash = window.location.hash.replace('#', '');
+      if (newHash && ['sampling', 'experiment', 'dissemination', 'conference', 'workshop'].includes(newHash)) {
+        switchTab(newHash);
+      }
+    });
+  });
+</script>

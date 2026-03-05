@@ -1,0 +1,453 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { t } from '../../i18n/utils';
+
+const locale = 'en';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const teamMembers = [
+  {
+    name: 'Maoxiao Peng',
+    title: 'PhD',
+    photo: 'maoxiao-peng.jpg',
+    cienciaId: '0A1D-96B9-27EB',
+    orcid: '0000-0002-4855-1202',
+    role: 'Principal Investigator',
+  },
+  {
+    name: 'Deborah Power',
+    title: 'PhD',
+    photo: 'deborah-power.jpg',
+    cienciaId: '891A-8A44-3CAE',
+    orcid: '0000-0003-1366-0246',
+    role: 'Co-Investigator',
+  },
+  {
+    name: 'Adelino V. M. Canário',
+    title: 'PhD',
+    photo: 'adelino-canario.jpg',
+    cienciaId: '1F1E-D3B3-F804',
+    orcid: '0000-0002-6244-6468',
+    role: 'Researcher',
+  },
+  {
+    name: 'João C. R. Cardoso',
+    title: 'PhD',
+    photo: 'joao-cardoso.jpg',
+    cienciaId: '8B16-F203-2AFC',
+    orcid: '0000-0001-7890-0170',
+    role: 'Researcher',
+  },
+  {
+    name: 'Zhi Li',
+    title: 'PhD',
+    photo: 'zhi-li.jpg',
+    cienciaId: '361E-ECE9-BC00',
+    orcid: '0000-0002-4255-4170',
+    role: 'Researcher',
+  },
+];
+
+const milestones = [
+  {
+    num: 1,
+    title: 'Nutritional profile of wild and farmed bivalve populations',
+    desc: 'Characterization and comparison of protein content, fat/cholesterol profile, vitamins and important minerals (zinc and copper) between farmed and wild populations for genetic selection purposes for the three bivalve species.',
+  },
+  {
+    num: 2,
+    title: 'Genetic profile and genomes of bivalve populations',
+    desc: 'Characterization of genetic diversity of farmed and wild bivalve populations along the Portuguese coast including GWAS analysis and identification of hybrid species. Assembled genome of the clam Ruditapes decussatus.',
+  },
+  {
+    num: 3,
+    title: 'Seasonal characterization of risks for bivalve production',
+    desc: 'Monitoring of environmental parameters, identification and characterization of population dynamics of microorganisms at sites across two years, to generate an annual map of the main pathogen risks.',
+  },
+  {
+    num: 4,
+    title: 'Resilience profile of bivalve populations',
+    desc: 'Characterization of the susceptibility and resilience of farmed and wild bivalve species to disease and environmental stress to assist selection of robust bivalves for intensive production.',
+  },
+  {
+    num: 5,
+    title: 'Tools for safety monitoring',
+    desc: 'Provide protocols and tools based on DNA assessment to detect pathogens, prevent and mitigate the risk of future disease outbreaks, avoid production losses and safeguard wild bivalve populations.',
+  },
+];
+---
+
+<Layout title={t(locale, 'nav.about')} locale={locale}>
+  <!-- Page Hero -->
+  <section class="page-hero" style={`background-image: url(${base}/images/backgrounds/bg1.png)`}>
+    <div class="page-hero__overlay"></div>
+    <h1 class="page-hero__title pixel-font">{t(locale, 'nav.about')}</h1>
+  </section>
+
+  <!-- Aims -->
+  <section class="section" id="aims">
+    <div class="container">
+      <h2 class="section__title pixel-font">{t(locale, 'about.aims_title')}</h2>
+      <div class="pixel-divider"></div>
+      <div class="aims-content pixel-box">
+        <p>BivalvePlus aims to provide a holistic assessment of the status of the bivalve industry in the Algarve region, comparing production in the Ria Formosa with production in Sagres, but also with other production sites in Portugal (Setúbal and Aveiro), so as to support and promote nationally the sustainable growth of the bivalve industry so it can exploit growing market opportunities.</p>
+        <p>The goal is to ensure the effective utilization of wild bivalve resources, reduce ecological depletion, assess the ability of existing population structures to adapt to climate change, and to develop and provide tools for monitoring and risk assessment linked to bivalve health and resilience and in this way support the economic development of this industry and preserve the unique biodiversity and ecosystems of Portugal, while promoting blue economy.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Basic Information -->
+  <section class="section section--alt" id="basic-info">
+    <div class="container">
+      <h2 class="section__title pixel-font">{t(locale, 'about.basic_info_title')}</h2>
+      <div class="pixel-divider"></div>
+      <div class="info-grid">
+        <div class="info-card pixel-box">
+          <span class="info-card__label pixel-font">{t(locale, 'about.duration')}</span>
+          <span class="info-card__value">3 years (May 2025 – April 2028)</span>
+        </div>
+        <div class="info-card pixel-box">
+          <span class="info-card__label pixel-font">{t(locale, 'about.budget')}</span>
+          <span class="info-card__value">228,960.00 EUR</span>
+        </div>
+        <div class="info-card pixel-box">
+          <span class="info-card__label pixel-font">{t(locale, 'about.funding')}</span>
+          <span class="info-card__value">Fundação para a Ciência e a Tecnologia (FCT)</span>
+        </div>
+        <div class="info-card pixel-box">
+          <span class="info-card__label pixel-font">{t(locale, 'about.coordinator')}</span>
+          <span class="info-card__value">Universidade do Algarve – Centro de Ciências do Mar (CCMAR)</span>
+        </div>
+        <div class="info-card pixel-box">
+          <span class="info-card__label pixel-font">{t(locale, 'about.reference')}</span>
+          <span class="info-card__value">2023.17014.ICDT</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Information -->
+  <section class="section" id="project-info">
+    <div class="container">
+      <h2 class="section__title pixel-font">{t(locale, 'about.project_info_title')}</h2>
+      <div class="pixel-divider"></div>
+
+      <div class="project-block">
+        <h3 class="project-block__label pixel-font">{t(locale, 'about.title_pt')}</h3>
+        <p class="project-block__text"><em>Ferramentas tecnológicas para a resiliência e segurança de bivalves marinhos de aquacultura e selvagens e aumento da sua produção em Portugal.</em></p>
+      </div>
+
+      <div class="project-block">
+        <h3 class="project-block__label pixel-font">{t(locale, 'about.title_en')}</h3>
+        <p class="project-block__text"><em>Technological tools for resilience and safety of aquaculture and wild marine bivalve and scale-up production in Portugal.</em></p>
+      </div>
+
+      <div class="project-block">
+        <h3 class="project-block__label pixel-font">{t(locale, 'about.abstract')}</h3>
+        <p class="project-block__text">The impact of the bivalve industry and associated environmental risks are poorly understood in Portugal. The project will characterise wild and aquaculture bivalve genetic structure and diversity, disease susceptibility and environmental risks. Management strategies for growth of environmentally compatible bivalve aquaculture will be established for three iconic and economically important species, clams (<em>Ruditapes decussatus</em> and <em>Ruditapes philippinarum</em>), mussels (<em>Mytilus galloprovincialis</em>) and oysters (<em>Magallana gigas</em>).</p>
+      </div>
+
+      <div class="project-block">
+        <h3 class="project-block__label pixel-font">{t(locale, 'about.objectives')}</h3>
+        <div class="project-block__text">
+          <p>The project goals are ambitious and will advance the state of the art of bivalve population genetics, genomics, resilience, pathogens, and wild and aquaculture bivalves. The main goals are to:</p>
+          <ol>
+            <li>Establish guidelines for management of sustainable production in bivalve farming</li>
+            <li>Identify the main biological and non-biological risks associated with production</li>
+            <li>Make available for industry state of the art tools for real time monitoring of health status, quality, and safety of commercially important bivalves</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="project-block">
+        <h3 class="project-block__label pixel-font">{t(locale, 'about.milestones')}</h3>
+        <div class="milestones-list">
+          {milestones.map((ms) => (
+            <div class="milestone-card pixel-box">
+              <div class="milestone-card__num pixel-font">M{ms.num}</div>
+              <div class="milestone-card__body">
+                <h4 class="milestone-card__title">{ms.title}</h4>
+                <p class="milestone-card__desc">{ms.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Members -->
+  <section class="section section--alt" id="team">
+    <div class="container">
+      <h2 class="section__title pixel-font">{t(locale, 'about.team_title')}</h2>
+      <div class="pixel-divider"></div>
+      <div class="team-grid">
+        {teamMembers.map((member) => (
+          <div class="team-card pixel-box">
+            <img
+              src={`${base}/images/team/${member.photo}`}
+              alt={member.name}
+              class="team-card__photo"
+            />
+            <div class="team-card__info">
+              <h3 class="team-card__name">{member.name}</h3>
+              <p class="team-card__role">{member.role}</p>
+              <div class="team-card__links">
+                <a
+                  href={`https://www.cienciavitae.pt/${member.cienciaId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="team-card__link"
+                >
+                  Ciência ID
+                </a>
+                <a
+                  href={`https://orcid.org/${member.orcid}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="team-card__link"
+                >
+                  ORCID
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Stakeholders -->
+  <section class="section" id="stakeholders">
+    <div class="container">
+      <h2 class="section__title pixel-font">{t(locale, 'about.stakeholders_title')}</h2>
+      <div class="pixel-divider"></div>
+      <div class="stakeholders-grid">
+        <div class="stakeholder-card pixel-box">
+          <div class="stakeholder-card__icon pixel-font">&#x1F393;</div>
+          <p>Scholars in marine biology, mollusks, and ecology</p>
+        </div>
+        <div class="stakeholder-card pixel-box">
+          <div class="stakeholder-card__icon pixel-font">&#x1F41A;</div>
+          <p>Bivalve producers and traders</p>
+        </div>
+        <div class="stakeholder-card pixel-box">
+          <div class="stakeholder-card__icon pixel-font">&#x1F30D;</div>
+          <p>Environmental protection organizations</p>
+        </div>
+        <div class="stakeholder-card pixel-box">
+          <div class="stakeholder-card__icon pixel-font">&#x1F3DB;</div>
+          <p>Relevant government agencies</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  /* Page Hero */
+  .page-hero {
+    position: relative;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+  }
+  .page-hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .page-hero__title {
+    position: relative;
+    z-index: 2;
+    color: var(--color-white);
+    font-size: 1.3rem;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Sections */
+  .section {
+    padding: var(--space-2xl) 0;
+  }
+  .section--alt {
+    background: #f5f3ef;
+  }
+  .section__title {
+    font-size: 0.85rem;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--space-sm);
+  }
+
+  /* Aims */
+  .aims-content {
+    padding: var(--space-lg);
+    line-height: 1.8;
+    font-size: 0.95rem;
+  }
+  .aims-content p {
+    margin-bottom: var(--space-md);
+  }
+  .aims-content p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Basic Info Grid */
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
+  }
+  .info-card {
+    padding: var(--space-md) var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+  .info-card__label {
+    font-size: 0.5rem;
+    color: var(--color-primary);
+    text-transform: uppercase;
+  }
+  .info-card__value {
+    font-size: 0.95rem;
+    color: var(--color-text);
+  }
+
+  /* Project Info */
+  .project-block {
+    margin-bottom: var(--space-xl);
+  }
+  .project-block__label {
+    font-size: 0.55rem;
+    color: var(--color-secondary);
+    margin-bottom: var(--space-sm);
+    text-transform: uppercase;
+  }
+  .project-block__text {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+  .project-block__text ol {
+    padding-left: var(--space-lg);
+    margin-top: var(--space-sm);
+  }
+  .project-block__text li {
+    margin-bottom: var(--space-sm);
+  }
+
+  /* Milestones */
+  .milestones-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+  }
+  .milestone-card {
+    display: flex;
+    gap: var(--space-lg);
+    padding: var(--space-md) var(--space-lg);
+    align-items: flex-start;
+  }
+  .milestone-card__num {
+    font-size: 0.7rem;
+    color: var(--color-primary);
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--color-primary);
+  }
+  .milestone-card__title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: var(--space-xs);
+    color: var(--color-text);
+  }
+  .milestone-card__desc {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: var(--color-text-light);
+  }
+
+  /* Team */
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+  }
+  .team-card {
+    text-align: center;
+    padding: var(--space-lg) var(--space-md);
+  }
+  .team-card__photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 3px solid var(--color-primary);
+    margin-bottom: var(--space-md);
+  }
+  .team-card__name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: var(--space-xs);
+  }
+  .team-card__role {
+    font-size: 0.8rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--space-sm);
+  }
+  .team-card__links {
+    display: flex;
+    gap: var(--space-sm);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .team-card__link {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    transition: all 0.2s;
+  }
+  .team-card__link:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  /* Stakeholders */
+  .stakeholders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
+  }
+  .stakeholder-card {
+    text-align: center;
+    padding: var(--space-lg);
+  }
+  .stakeholder-card__icon {
+    font-size: 2rem;
+    margin-bottom: var(--space-sm);
+  }
+  .stakeholder-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .milestone-card {
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+    .team-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

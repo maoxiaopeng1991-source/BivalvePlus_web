@@ -1,0 +1,73 @@
+---
+interface Props {
+  authors: string;
+  year: string;
+  title: string;
+  journal: string;
+  volume?: string;
+  pages?: string;
+  doi?: string;
+}
+
+const { authors, year, title, journal, volume, pages, doi } = Astro.props;
+---
+
+<article class="publication-card pixel-box">
+  <p class="publication-card__citation">
+    <span class="publication-card__authors">{authors}</span>
+    <span class="publication-card__year"> ({year}).</span>
+    <span class="publication-card__title"> {title}.</span>
+    <span class="publication-card__journal"> <em>{journal}</em></span>
+    {volume && <span>, {volume}</span>}
+    {pages && <span>, {pages}</span>}
+    <span>.</span>
+  </p>
+  {doi && (
+    <a
+      href={`https://doi.org/${doi}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="publication-card__doi"
+    >
+      DOI: {doi}
+    </a>
+  )}
+</article>
+
+<style>
+  .publication-card {
+    padding: 1rem 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+
+  .publication-card__citation {
+    font-size: 0.9rem;
+    color: var(--color-text);
+  }
+
+  .publication-card__authors {
+    font-weight: 600;
+  }
+
+  .publication-card__title {
+    color: #333;
+  }
+
+  .publication-card__journal em {
+    font-style: italic;
+  }
+
+  .publication-card__doi {
+    display: inline-block;
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+    color: var(--color-primary);
+    text-decoration: underline;
+    word-break: break-all;
+  }
+
+  .publication-card__doi:hover {
+    color: var(--color-primary-dark);
+  }
+</style>

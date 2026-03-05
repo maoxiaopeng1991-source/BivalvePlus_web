@@ -1,0 +1,382 @@
+---
+interface Props {
+  columns: { key: string; label: string }[];
+  rows: Record<string, string>[];
+  searchPlaceholder: string;
+  csvFilename?: string;
+  downloadLabel?: string;
+  noResultsLabel?: string;
+  pageSize?: number;
+}
+
+const {
+  columns,
+  rows,
+  searchPlaceholder,
+  csvFilename = 'data.csv',
+  downloadLabel = 'Download CSV',
+  noResultsLabel = 'No results found',
+  pageSize = 50,
+} = Astro.props;
+
+const tableId = `data-table-${Math.random().toString(36).slice(2, 8)}`;
+---
+
+<div class="data-table-wrapper" data-table-id={tableId} data-page-size={pageSize}>
+  <div class="data-table__toolbar">
+    <div class="data-table__search">
+      <input
+        type="text"
+        class="data-table__input pixel-box"
+        placeholder={searchPlaceholder}
+        data-search-for={tableId}
+      />
+    </div>
+    <button class="data-table__csv pixel-btn pixel-btn--secondary" data-csv-for={tableId} data-filename={csvFilename}>
+      {downloadLabel}
+    </button>
+  </div>
+
+  <div class="data-table__container pixel-box">
+    <table class="data-table" id={tableId}>
+      <thead>
+        <tr>
+          {columns.map((col) => (
+            <th class="pixel-font">{col.label}</th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {rows.length > 0 ? (
+          rows.map((row) => (
+            <tr>
+              {columns.map((col) => (
+                <td>
+                  {col.key.startsWith('link') && row[col.key] ? (
+                    <a href={row[col.key]} target="_blank" rel="noopener noreferrer" class="data-table__link">
+                      View
+                    </a>
+                  ) : (
+                    row[col.key] || '—'
+                  )}
+                </td>
+              ))}
+            </tr>
+          ))
+        ) : (
+          <tr class="data-table__empty">
+            <td colspan={columns.length}>{noResultsLabel}</td>
+          </tr>
+        )}
+      </tbody>
+    </table>
+  </div>
+
+  {rows.length > pageSize && (
+    <div class="data-table__pagination" data-pagination-for={tableId}>
+      <button class="pixel-btn pixel-btn--secondary data-table__page-btn" data-page-action="prev" disabled>
+        ◀ Prev
+      </button>
+      <span class="data-table__page-info pixel-font"></span>
+      <button class="pixel-btn pixel-btn--secondary data-table__page-btn" data-page-action="next">
+        Next ▶
+      </button>
+    </div>
+  )}
+</div>
+
+<style>
+  .data-table-wrapper {
+    margin-bottom: 1.5rem;
+  }
+
+  .data-table__toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .data-table__search {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .data-table__input {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+    border: 3px solid var(--color-text);
+    background: var(--color-white);
+    font-family: 'Arial', sans-serif;
+  }
+
+  .data-table__input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+  }
+
+  .data-table__csv {
+    font-size: 0.55rem;
+    white-space: nowrap;
+  }
+
+  .data-table__container {
+    overflow-x: auto;
+    padding: 0;
+  }
+
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+  }
+
+  .data-table th {
+    font-size: 0.5rem;
+    padding: 0.8rem 0.6rem;
+    text-align: left;
+    background: var(--color-primary);
+    color: var(--color-white);
+    white-space: nowrap;
+    border-bottom: 3px solid var(--color-text);
+  }
+
+  .data-table td {
+    padding: 0.6rem;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+  }
+
+  .data-table tbody tr:hover {
+    background: var(--color-bg);
+  }
+
+  .data-table tbody tr.hidden {
+    display: none;
+  }
+
+  .data-table tbody tr.page-hidden {
+    display: none;
+  }
+
+  .data-table__empty td {
+    text-align: center;
+    padding: 2rem;
+    color: var(--color-neutral);
+    font-style: italic;
+  }
+
+  .data-table__link {
+    color: var(--color-primary);
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+  .data-table__link:hover {
+    color: var(--color-primary-dark);
+  }
+
+  /* Pagination */
+  .data-table__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  .data-table__page-btn {
+    font-size: 0.5rem;
+  }
+
+  .data-table__page-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  .data-table__page-info {
+    font-size: 0.45rem;
+    color: var(--color-text);
+  }
+
+  @media (max-width: 768px) {
+    .data-table__toolbar {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .data-table {
+      font-size: 0.75rem;
+    }
+
+    .data-table th {
+      font-size: 0.45rem;
+    }
+  }
+</style>
+
+<script>
+  // Pagination state per table
+  const tableStates: Record<string, { page: number; pageSize: number; filtered: HTMLElement[] }> = {};
+
+  function applyPagination(tableId: string) {
+    const state = tableStates[tableId];
+    if (!state) return;
+
+    const { page, pageSize, filtered } = state;
+    const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
+    const start = page * pageSize;
+    const end = start + pageSize;
+
+    // Get ALL data rows (not empty rows)
+    const table = document.getElementById(tableId);
+    if (!table) return;
+    const allRows = Array.from(table.querySelectorAll('tbody tr:not(.data-table__empty)')) as HTMLElement[];
+
+    // First hide all via page-hidden, then show filtered ones in range
+    allRows.forEach(row => row.classList.add('page-hidden'));
+    filtered.forEach((row, i) => {
+      if (i >= start && i < end) {
+        row.classList.remove('page-hidden');
+      }
+    });
+
+    // Update pagination controls
+    const wrapper = document.querySelector(`[data-table-id="${tableId}"]`);
+    const pagination = wrapper?.querySelector(`[data-pagination-for="${tableId}"]`);
+    if (pagination) {
+      const info = pagination.querySelector('.data-table__page-info');
+      const prevBtn = pagination.querySelector('[data-page-action="prev"]') as HTMLButtonElement;
+      const nextBtn = pagination.querySelector('[data-page-action="next"]') as HTMLButtonElement;
+
+      if (info) info.textContent = `${page + 1} / ${totalPages} (${filtered.length})`;
+      if (prevBtn) prevBtn.disabled = page === 0;
+      if (nextBtn) nextBtn.disabled = page >= totalPages - 1;
+
+      // Show/hide pagination based on whether it's needed
+      (pagination as HTMLElement).style.display = filtered.length > pageSize ? 'flex' : 'none';
+    }
+  }
+
+  function initTable(wrapper: Element) {
+    const tableId = (wrapper as HTMLElement).dataset.tableId;
+    if (!tableId) return;
+    const pageSize = parseInt((wrapper as HTMLElement).dataset.pageSize || '50', 10);
+    const table = document.getElementById(tableId);
+    if (!table) return;
+
+    const allRows = Array.from(table.querySelectorAll('tbody tr:not(.data-table__empty)')) as HTMLElement[];
+
+    tableStates[tableId] = {
+      page: 0,
+      pageSize,
+      filtered: allRows.slice(), // initially all rows
+    };
+
+    applyPagination(tableId);
+  }
+
+  // Initialize all tables
+  document.querySelectorAll('.data-table-wrapper').forEach(initTable);
+
+  // Search functionality with pagination reset
+  document.querySelectorAll('[data-search-for]').forEach(input => {
+    input.addEventListener('input', (e) => {
+      const tableId = (e.target as HTMLInputElement).dataset.searchFor;
+      if (!tableId) return;
+      const query = (e.target as HTMLInputElement).value.toLowerCase();
+      const table = document.getElementById(tableId);
+      if (!table) return;
+
+      const allRows = Array.from(table.querySelectorAll('tbody tr:not(.data-table__empty)')) as HTMLElement[];
+
+      // Filter by search query
+      const filtered: HTMLElement[] = [];
+      allRows.forEach(row => {
+        const text = row.textContent?.toLowerCase() || '';
+        const match = !query || text.includes(query);
+        row.classList.toggle('hidden', !match);
+        if (match) {
+          filtered.push(row);
+        }
+      });
+
+      // Reset to page 0 with filtered results
+      if (tableStates[tableId]) {
+        tableStates[tableId].page = 0;
+        tableStates[tableId].filtered = filtered;
+        applyPagination(tableId);
+      }
+    });
+  });
+
+  // Pagination button clicks
+  document.querySelectorAll('[data-pagination-for]').forEach(pagination => {
+    const tableId = (pagination as HTMLElement).dataset.paginationFor;
+    if (!tableId) return;
+
+    pagination.querySelectorAll('[data-page-action]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const state = tableStates[tableId];
+        if (!state) return;
+        const action = (btn as HTMLElement).dataset.pageAction;
+        const totalPages = Math.ceil(state.filtered.length / state.pageSize);
+
+        if (action === 'prev' && state.page > 0) {
+          state.page--;
+        } else if (action === 'next' && state.page < totalPages - 1) {
+          state.page++;
+        }
+        applyPagination(tableId);
+
+        // Scroll to table top
+        const table = document.getElementById(tableId);
+        table?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  });
+
+  // CSV export - exports ALL filtered rows (not just current page), handles empty link cells
+  document.querySelectorAll('[data-csv-for]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tableId = (btn as HTMLElement).dataset.csvFor;
+      const filename = (btn as HTMLElement).dataset.filename || 'data.csv';
+      const table = document.getElementById(tableId!);
+      if (!table) return;
+
+      const headers = Array.from(table.querySelectorAll('th')).map(th => th.textContent?.trim() || '');
+
+      // Export all non-hidden (search-filtered) rows, ignoring pagination
+      const rows = Array.from(table.querySelectorAll('tbody tr:not(.data-table__empty):not(.hidden)'));
+      const csvRows = [headers.join(',')];
+
+      rows.forEach(row => {
+        const cells = Array.from(row.querySelectorAll('td')).map(td => {
+          const link = td.querySelector('a');
+          let text: string;
+          if (link) {
+            text = link.getAttribute('href') || '';
+          } else {
+            text = td.textContent?.trim() || '';
+          }
+          // Replace em/en dash placeholders with empty string for clean CSV
+          text = text.replace(/[\u2014\u2013\u2012\u2015—–]/g, '');
+          return `"${text.replace(/"/g, '""')}"`;
+        });
+        csvRows.push(cells.join(','));
+      });
+
+      const blob = new Blob(['\uFEFF' + csvRows.join('\n')], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(url);
+    });
+  });
+</script>

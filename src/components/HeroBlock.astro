@@ -1,0 +1,148 @@
+---
+interface Props {
+  bgImage: string;
+  speciesImage: string;
+  speciesAlt: string;
+  title: string;
+  description: string;
+  href: string;
+  colorClass?: string;
+  learnMore: string;
+}
+
+const { bgImage, speciesImage, speciesAlt, title, description, href, colorClass = '', learnMore } = Astro.props;
+---
+
+<section class={`hero-block ${colorClass}`}>
+  <div class="hero-block__bg" style={`background-image: url(${bgImage})`}></div>
+  <div class="hero-block__overlay"></div>
+  <div class="hero-block__content container">
+    <div class="hero-block__text">
+      <h2 class="hero-block__title pixel-font">{title}</h2>
+      <div class="pixel-divider hero-block__divider"></div>
+      <p class="hero-block__desc">{description}</p>
+      <a href={href} class="pixel-btn pixel-btn--primary">{learnMore} →</a>
+    </div>
+    <a href={href} class="hero-block__species-link">
+      <img
+        src={speciesImage}
+        alt={speciesAlt}
+        class="hero-block__species pixel-art"
+      />
+    </a>
+  </div>
+</section>
+
+<style>
+  .hero-block {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .hero-block__bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .hero-block__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.45) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    );
+  }
+
+  .hero-block__content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: var(--space-xl);
+    padding: var(--space-2xl) var(--space-lg);
+  }
+
+  .hero-block__text {
+    max-width: 550px;
+  }
+
+  .hero-block__title {
+    font-size: 1.4rem;
+    color: var(--color-white);
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: var(--space-md);
+  }
+
+  .hero-block__divider {
+    width: 120px;
+    background: repeating-linear-gradient(
+      90deg,
+      var(--color-white) 0px,
+      var(--color-white) 4px,
+      transparent 4px,
+      transparent 8px
+    );
+    margin-bottom: var(--space-md);
+  }
+
+  .hero-block__desc {
+    font-size: 1rem;
+    color: var(--color-white);
+    margin-bottom: var(--space-lg);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    line-height: 1.8;
+  }
+
+  .hero-block__species-link {
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+  }
+
+  .hero-block__species-link:hover {
+    transform: scale(1.05);
+  }
+
+  .hero-block__species {
+    width: 280px;
+    height: auto;
+    filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.4));
+    transition: filter 0.3s;
+  }
+
+  .hero-block__species-link:hover .hero-block__species {
+    filter: drop-shadow(6px 6px 0px rgba(0, 0, 0, 0.5));
+  }
+
+  @media (max-width: 768px) {
+    .hero-block {
+      min-height: 80vh;
+    }
+
+    .hero-block__content {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .hero-block__title {
+      font-size: 1rem;
+    }
+
+    .hero-block__species {
+      width: 180px;
+    }
+
+    .hero-block__divider {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+</style>

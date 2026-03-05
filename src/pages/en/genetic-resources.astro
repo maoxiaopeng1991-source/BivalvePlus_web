@@ -1,0 +1,202 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import EventTabs from '../../components/EventTabs.astro';
+import DataTable from '../../components/DataTable.astro';
+import { t } from '../../i18n/utils';
+import genomeData from '../../data/genetic-genome.json';
+import populationData from '../../data/genetic-population.json';
+import markersData from '../../data/genetic-markers.json';
+
+const locale = 'en';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const categories = ['genome', 'population_genome', 'dna_markers'] as const;
+const tabCategories = categories.map(key => ({
+  key,
+  label: t(locale, `nav_genetic.${key}`),
+}));
+
+const genomeColumns = [
+  { key: 'species', label: t(locale, 'genetic.table_species') },
+  { key: 'assembly', label: t(locale, 'genetic.table_assembly') },
+  { key: 'version', label: t(locale, 'genetic.table_version') },
+  { key: 'size', label: t(locale, 'genetic.table_size') },
+  { key: 'level', label: t(locale, 'genetic.table_level') },
+  { key: 'database', label: t(locale, 'genetic.table_database') },
+  { key: 'accession', label: t(locale, 'genetic.table_accession') },
+  { key: 'link', label: t(locale, 'genetic.table_link') },
+];
+
+const populationColumns = [
+  { key: 'species', label: t(locale, 'genetic.table_species') },
+  { key: 'bioproject', label: t(locale, 'genetic.table_bioproject') },
+  { key: 'platform', label: t(locale, 'genetic.table_platform') },
+  { key: 'data_size', label: t(locale, 'genetic.table_data_size') },
+  { key: 'database', label: t(locale, 'genetic.table_database') },
+  { key: 'accession', label: t(locale, 'genetic.table_accession') },
+  { key: 'link_r1', label: t(locale, 'genetic.table_link_r1') },
+  { key: 'link_r2', label: t(locale, 'genetic.table_link_r2') },
+];
+
+const markersColumns = [
+  { key: 'species', label: t(locale, 'genetic.table_species') },
+  { key: 'marker', label: t(locale, 'genetic.table_marker') },
+  { key: 'gene', label: t(locale, 'genetic.table_gene') },
+  { key: 'sampling_site', label: t(locale, 'genetic.table_sampling_site') },
+  { key: 'samples', label: t(locale, 'genetic.table_samples') },
+  { key: 'database', label: t(locale, 'genetic.table_database') },
+  { key: 'accession', label: t(locale, 'genetic.table_accession') },
+  { key: 'link', label: t(locale, 'genetic.table_link') },
+];
+
+function formatDate(iso: string | null): string {
+  if (!iso) return '—';
+  return new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+}
+---
+
+<Layout title={t(locale, 'genetic.page_title')} locale={locale}>
+  <section class="page-hero" style={`background-image: url(${base}/images/backgrounds/bg4.png)`}>
+    <div class="page-hero__overlay"></div>
+    <h1 class="page-hero__title pixel-font">{t(locale, 'genetic.page_title')}</h1>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <EventTabs categories={tabCategories} activeCategory="genome" />
+
+      <div class="tab-panel tab-panel--active" data-panel="genome">
+        <p class="tab-desc">{t(locale, 'genetic.genome_desc')}</p>
+        {genomeData.last_updated && (
+          <p class="last-updated pixel-font">{t(locale, 'genetic.last_updated')}: {formatDate(genomeData.last_updated)}</p>
+        )}
+        {genomeData.rows.length > 0 ? (
+          <DataTable
+            columns={genomeColumns}
+            rows={genomeData.rows}
+            searchPlaceholder={t(locale, 'common.search')}
+            csvFilename="genetic-genome.csv"
+            downloadLabel={t(locale, 'common.download_csv')}
+            noResultsLabel={t(locale, 'common.no_results')}
+          />
+        ) : (
+          <p class="coming-soon pixel-font">{t(locale, 'genetic.coming_soon')}</p>
+        )}
+      </div>
+
+      <div class="tab-panel" data-panel="population_genome">
+        <p class="tab-desc">{t(locale, 'genetic.population_desc')}</p>
+        {populationData.last_updated && (
+          <p class="last-updated pixel-font">{t(locale, 'genetic.last_updated')}: {formatDate(populationData.last_updated)}</p>
+        )}
+        {populationData.rows.length > 0 ? (
+          <DataTable
+            columns={populationColumns}
+            rows={populationData.rows}
+            searchPlaceholder={t(locale, 'common.search')}
+            csvFilename="genetic-population.csv"
+            downloadLabel={t(locale, 'common.download_csv')}
+            noResultsLabel={t(locale, 'common.no_results')}
+          />
+        ) : (
+          <p class="coming-soon pixel-font">{t(locale, 'genetic.coming_soon')}</p>
+        )}
+      </div>
+
+      <div class="tab-panel" data-panel="dna_markers">
+        <p class="tab-desc">{t(locale, 'genetic.markers_desc')}</p>
+        {markersData.last_updated && (
+          <p class="last-updated pixel-font">{t(locale, 'genetic.last_updated')}: {formatDate(markersData.last_updated)}</p>
+        )}
+        {markersData.rows.length > 0 ? (
+          <DataTable
+            columns={markersColumns}
+            rows={markersData.rows}
+            searchPlaceholder={t(locale, 'common.search')}
+            csvFilename="genetic-markers.csv"
+            downloadLabel={t(locale, 'common.download_csv')}
+            noResultsLabel={t(locale, 'common.no_results')}
+          />
+        ) : (
+          <p class="coming-soon pixel-font">{t(locale, 'genetic.coming_soon')}</p>
+        )}
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-hero {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+  }
+  .page-hero__overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.4); }
+  .page-hero__title { position: relative; z-index: 2; color: var(--color-white); font-size: 1.3rem; text-shadow: 3px 3px 0px rgba(0,0,0,0.5); }
+
+  .tab-panel { display: none; }
+  .tab-panel--active { display: block; }
+
+  .tab-desc {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  .last-updated {
+    font-size: 0.5rem;
+    color: var(--color-neutral);
+    margin-bottom: 1rem;
+  }
+
+  .coming-soon {
+    text-align: center;
+    font-size: 0.6rem;
+    color: var(--color-neutral);
+    padding: 3rem 0;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.event-tab');
+    const panels = document.querySelectorAll('.tab-panel');
+
+    function switchTab(category: string) {
+      tabs.forEach(tab => {
+        const isActive = tab.getAttribute('data-category') === category;
+        tab.classList.toggle('event-tab--active', isActive);
+        tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      });
+      panels.forEach(panel => {
+        panel.classList.toggle('tab-panel--active', panel.getAttribute('data-panel') === category);
+      });
+      history.replaceState(null, '', `#${category}`);
+    }
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const category = tab.getAttribute('data-category');
+        if (category) switchTab(category);
+      });
+    });
+
+    const hash = window.location.hash.replace('#', '');
+    const validTabs = ['genome', 'population_genome', 'dna_markers'];
+    if (hash && validTabs.includes(hash)) {
+      switchTab(hash);
+    }
+
+    window.addEventListener('hashchange', () => {
+      const newHash = window.location.hash.replace('#', '');
+      if (newHash && validTabs.includes(newHash)) {
+        switchTab(newHash);
+      }
+    });
+  });
+</script>

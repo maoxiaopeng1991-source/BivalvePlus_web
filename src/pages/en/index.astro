@@ -1,0 +1,96 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import HeroBlock from '../../components/HeroBlock.astro';
+import { t, getLocalizedPath } from '../../i18n/utils';
+
+const locale = 'en';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout locale={locale}>
+  <!-- Slogan banner -->
+  <section class="slogan-banner">
+    <div class="container">
+      <img
+        src={`${base}/images/logos/bivalveplus-logo.png`}
+        alt="BivalvePlus"
+        class="slogan-banner__logo pixel-art"
+      />
+      <p class="slogan-banner__text pixel-font">
+        {t(locale, 'site.slogan')}
+      </p>
+    </div>
+  </section>
+
+  <!-- Block 1: About (bg1 + Mytilus galloprovincialis) -->
+  <HeroBlock
+    bgImage={`${base}/images/backgrounds/bg1.png`}
+    speciesImage={`${base}/images/species/mytilus-galloprovincialis.png`}
+    speciesAlt="Mytilus galloprovincialis"
+    title={t(locale, 'homepage.block1_title')}
+    description={t(locale, 'homepage.block1_desc')}
+    href={getLocalizedPath('/about/', locale)}
+    learnMore={t(locale, 'common.learn_more')}
+  />
+
+  <!-- Block 2: Events (bg2 + Ruditapes decussatus) -->
+  <HeroBlock
+    bgImage={`${base}/images/backgrounds/bg2.png`}
+    speciesImage={`${base}/images/species/ruditapes-decussatus.png`}
+    speciesAlt="Ruditapes decussatus"
+    title={t(locale, 'homepage.block2_title')}
+    description={t(locale, 'homepage.block2_desc')}
+    href={getLocalizedPath('/events/', locale)}
+    learnMore={t(locale, 'common.learn_more')}
+  />
+
+  <!-- Block 3: Release (bg3 + Ruditapes philippinarum) -->
+  <HeroBlock
+    bgImage={`${base}/images/backgrounds/bg3.png`}
+    speciesImage={`${base}/images/species/ruditapes-philippinarum.png`}
+    speciesAlt="Ruditapes philippinarum"
+    title={t(locale, 'homepage.block3_title')}
+    description={t(locale, 'homepage.block3_desc')}
+    href={getLocalizedPath('/release/', locale)}
+    learnMore={t(locale, 'common.learn_more')}
+  />
+
+  <!-- Block 4: Genetic Resources (bg4 + Magallana gigas) -->
+  <HeroBlock
+    bgImage={`${base}/images/backgrounds/bg4.png`}
+    speciesImage={`${base}/images/species/magallana-gigas.png`}
+    speciesAlt="Magallana gigas"
+    title={t(locale, 'homepage.block4_title')}
+    description={t(locale, 'homepage.block4_desc')}
+    href={getLocalizedPath('/genetic-resources/', locale)}
+    learnMore={t(locale, 'common.learn_more')}
+  />
+</Layout>
+
+<style>
+  .slogan-banner {
+    background: #959491;
+    padding: var(--space-xl) 0;
+    text-align: center;
+    border-bottom: 3px solid var(--color-text);
+  }
+
+  .slogan-banner .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+  }
+
+  .slogan-banner__logo {
+    height: 400px;
+    width: auto;
+  }
+
+  .slogan-banner__text {
+    font-size: 0.65rem;
+    color: var(--color-white);
+    max-width: 600px;
+    line-height: 1.8;
+  }
+</style>

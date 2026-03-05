@@ -1,0 +1,11 @@
+{
+  "columns": [
+    "species",
+    "resource_type",
+    "marker",
+    "database",
+    "accession",
+    "link"
+  ],
+  "rows": []
+}

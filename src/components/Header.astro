@@ -1,0 +1,256 @@
+---
+import { type Locale, t, getLocalizedPath } from '../i18n/utils';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const navItems = [
+  { key: 'home', href: '/' },
+  { key: 'about', href: '/about/' },
+  {
+    key: 'events',
+    href: '/events/',
+    children: [
+      { key: 'sampling', href: '/events/#sampling' },
+      { key: 'experiment', href: '/events/#experiment' },
+      { key: 'dissemination', href: '/events/#dissemination' },
+      { key: 'conference', href: '/events/#conference' },
+      { key: 'workshop', href: '/events/#workshop' },
+    ],
+  },
+  {
+    key: 'release',
+    href: '/release/',
+    children: [
+      { key: 'genome', href: '/release/#genome' },
+      { key: 'population_genome', href: '/release/#population_genome' },
+      { key: 'other_genetic', href: '/release/#other_genetic' },
+      { key: 'suggestions', href: '/release/#suggestions' },
+      { key: 'publications', href: '/release/#publications' },
+    ],
+  },
+  {
+    key: 'genetic',
+    href: '/genetic-resources/',
+    children: [
+      { key: 'genome', href: '/genetic-resources/#genome' },
+      { key: 'population_genome', href: '/genetic-resources/#population_genome' },
+      { key: 'dna_markers', href: '/genetic-resources/#dna_markers' },
+    ],
+  },
+];
+---
+
+<header class="header" style={`background-image: url(${base}/images/backgrounds/bg-header.png)`}>
+  <div class="header__inner container">
+    <a href={getLocalizedPath('/', locale)} class="header__logo">
+      <img
+        src={`${base}/images/logos/bivalveplus-logo.png`}
+        alt="BivalvePlus"
+        class="header__logo-img pixel-art"
+      />
+    </a>
+
+    <nav class="header__nav" id="main-nav">
+      <ul class="nav-list">
+        {navItems.map((item) => (
+          <li class={`nav-item ${item.children ? 'has-dropdown' : ''}`}>
+            <a
+              href={getLocalizedPath(item.href, locale)}
+              class="nav-link pixel-font"
+            >
+              {item.children
+                ? t(locale, `nav.${item.key}`)
+                : t(locale, `nav.${item.key}`)}
+            </a>
+            {item.children && (
+              <ul class="dropdown pixel-box">
+                {item.children.map((child) => (
+                  <li>
+                    <a
+                      href={getLocalizedPath(child.href, locale)}
+                      class="dropdown__link"
+                    >
+                      {t(locale, `nav_events.${child.key}`) !== `nav_events.${child.key}`
+                        ? t(locale, `nav_events.${child.key}`)
+                        : t(locale, `nav_release.${child.key}`) !== `nav_release.${child.key}`
+                          ? t(locale, `nav_release.${child.key}`)
+                          : t(locale, `nav_genetic.${child.key}`)}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <LanguageSwitcher locale={locale} />
+      <button class="mobile-toggle pixel-btn" id="mobile-toggle" aria-label="Toggle menu">
+        ☰
+      </button>
+    </div>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: var(--header-height);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 3px solid var(--color-text);
+    display: flex;
+    align-items: center;
+  }
+
+  .header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header__logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .header__logo-img {
+    height: 160px;
+    width: auto;
+  }
+
+  .nav-list {
+    display: flex;
+    list-style: none;
+    gap: var(--space-xs);
+    align-items: center;
+  }
+
+  .nav-link {
+    font-size: 0.55rem;
+    padding: 0.5rem 0.7rem;
+    color: var(--color-white);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+    white-space: nowrap;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-link:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+  }
+
+  /* Dropdown */
+  .nav-item {
+    position: relative;
+  }
+
+  .has-dropdown:hover .dropdown {
+    display: block;
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    padding: var(--space-sm) 0;
+    z-index: 50;
+    background: var(--color-white);
+  }
+
+  .dropdown__link {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    color: var(--color-text);
+    transition: background 0.2s;
+  }
+
+  .dropdown__link:hover {
+    background: var(--color-accent-light);
+    color: var(--color-primary-dark);
+  }
+
+  .header__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+  }
+
+  .mobile-toggle {
+    display: none;
+    font-size: 1.2rem;
+    padding: 0.3rem 0.5rem;
+  }
+
+  /* Mobile */
+  @media (max-width: 900px) {
+    .mobile-toggle {
+      display: block;
+    }
+
+    .header__nav {
+      display: none;
+      position: absolute;
+      top: var(--header-height);
+      left: 0;
+      right: 0;
+      background: var(--color-white);
+      border-bottom: 3px solid var(--color-text);
+      padding: var(--space-md);
+    }
+
+    .header__nav.open {
+      display: block;
+    }
+
+    .nav-list {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+    }
+
+    .nav-link {
+      font-size: 0.65rem;
+      padding: 0.6rem 0.5rem;
+      width: 100%;
+    }
+
+    .dropdown {
+      position: static;
+      box-shadow: none;
+      border: none;
+      padding-left: var(--space-md);
+    }
+
+    .has-dropdown .dropdown {
+      display: block;
+    }
+  }
+</style>
+
+<script>
+  const toggle = document.getElementById('mobile-toggle');
+  const nav = document.getElementById('main-nav');
+  toggle?.addEventListener('click', () => {
+    nav?.classList.toggle('open');
+  });
+</script>

@@ -1,0 +1,12 @@
+{
+  "columns": [
+    "species",
+    "assembly",
+    "version",
+    "size",
+    "database",
+    "accession",
+    "link"
+  ],
+  "rows": []
+}

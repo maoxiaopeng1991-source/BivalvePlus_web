@@ -1,0 +1,44 @@
+backend:
+  name: github
+  repo: maoxiaopeng1991-source/BivalvePlus_web
+  site_domain: your-netlify-site.netlify.app  # UPDATE after Netlify OAuth setup
+  branch: main
+
+# Where uploaded media goes
+media_folder: public/images/events
+public_folder: /BivalvePlus_web/images/events
+
+# Locale for the CMS UI
+locale: en
+
+collections:
+  - name: events
+    label: Events
+    folder: src/content/events
+    create: true
+    slug: "{{category}}-{{slug}}-{{locale}}"
+    extension: md
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - label: Category
+        name: category
+        widget: select
+        options:
+          - { label: Sampling, value: sampling }
+          - { label: Experiment, value: experiment }
+          - { label: Dissemination, value: dissemination }
+          - { label: Conference, value: conference }
+          - { label: Workshop, value: workshop }
+      - label: Locale
+        name: locale
+        widget: select
+        options:
+          - { label: English, value: en }
+          - { label: Portuguese, value: pt }
+      - { label: Description, name: description, widget: string }
+      - { label: Image, name: image, widget: image, required: false }
+      - { label: Latitude, name: lat, widget: number, value_type: float, required: false, hint: "Required for sampling events (map marker)" }
+      - { label: Longitude, name: lng, widget: number, value_type: float, required: false, hint: "Required for sampling events (map marker)" }
+      - { label: Site Label, name: siteLabel, widget: string, required: false, hint: "Map marker label for sampling events" }
+      - { label: Body, name: body, widget: markdown }

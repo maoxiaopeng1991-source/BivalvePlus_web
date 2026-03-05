@@ -1,0 +1,332 @@
+{
+  "species": {
+    "ostreidae": {
+      "name": "Ostreidae sp.",
+      "color": "#e74c3c",
+      "image": "magallana-gigas.png"
+    },
+    "mytilus": {
+      "name": "Mytilus sp.",
+      "color": "#3498db",
+      "image": "mytilus-galloprovincialis.png"
+    },
+    "decussatus": {
+      "name": "R. decussatus",
+      "color": "#f39c12",
+      "image": "ruditapes-decussatus.png"
+    },
+    "philippinarum": {
+      "name": "R. philippinarum",
+      "color": "#9b59b6",
+      "image": "ruditapes-philippinarum.png"
+    }
+  },
+  "markers": [
+    {
+      "lat": 37.0093332,
+      "lng": -8.9279387,
+      "species": "mytilus",
+      "label": "Sagres (Wild)",
+      "region": "Algarve",
+      "count": "60 wild",
+      "date": "2025/10/28 (Wild)"
+    },
+    {
+      "lat": 37.0189359,
+      "lng": -8.9098502,
+      "species": "mytilus",
+      "label": "Sagres (Farm)",
+      "region": "Algarve",
+      "count": "30 farm",
+      "date": "2025/11/5 (Farm)"
+    },
+    {
+      "lat": 37.102533,
+      "lng": -8.6705606,
+      "species": "ostreidae",
+      "label": "Lagos (Wild)",
+      "region": "Algarve",
+      "count": "48 wild",
+      "date": "2025/9/30 (Wild)"
+    },
+    {
+      "lat": 37.102533,
+      "lng": -8.6705606,
+      "species": "mytilus",
+      "label": "Lagos (Wild)",
+      "region": "Algarve",
+      "count": "56 wild",
+      "date": "2025/9/30 (Wild)"
+    },
+    {
+      "lat": 37.1314394,
+      "lng": -8.6242169,
+      "species": "decussatus",
+      "label": "Alvor (Farm)",
+      "region": "Algarve",
+      "count": "20 farm",
+      "date": "2025/6/27 (Farm)"
+    },
+    {
+      "lat": 37.141785,
+      "lng": -8.5302566,
+      "species": "ostreidae",
+      "label": "Portimao (Wild)",
+      "region": "Algarve",
+      "count": "58 wild",
+      "date": "2025/10/2 (Wild)"
+    },
+    {
+      "lat": 37.141785,
+      "lng": -8.5302566,
+      "species": "mytilus",
+      "label": "Portimao (Wild)",
+      "region": "Algarve",
+      "count": "56 wild",
+      "date": "2025/10/2 (Wild)"
+    },
+    {
+      "lat": 37.0095517,
+      "lng": -7.9933149,
+      "species": "ostreidae",
+      "label": "Faro (Wild)",
+      "region": "Algarve",
+      "count": "49 wild",
+      "date": "2025/11/6 (Wild)"
+    },
+    {
+      "lat": 37.0095517,
+      "lng": -7.9933149,
+      "species": "mytilus",
+      "label": "Faro (Wild)",
+      "region": "Algarve",
+      "count": "55 wild",
+      "date": "2025/5/29 (Wild)"
+    },
+    {
+      "lat": 37.0104128,
+      "lng": -7.9927345,
+      "species": "decussatus",
+      "label": "Faro (Wild)",
+      "region": "Algarve",
+      "count": "49 wild",
+      "date": "2025/5/22 (Wild)"
+    },
+    {
+      "lat": 37.0055384,
+      "lng": -7.9664922,
+      "species": "decussatus",
+      "label": "Faro (Farm)",
+      "region": "Algarve",
+      "count": "60 farm",
+      "date": "2025/6/11 (Farm)"
+    },
+    {
+      "lat": 37.0023625,
+      "lng": -7.8550043,
+      "species": "decussatus",
+      "label": "Olhao (Farm)",
+      "region": "Algarve",
+      "count": "77 farm",
+      "date": "2025/10/28 (Farm)"
+    },
+    {
+      "lat": 37.051231,
+      "lng": -7.7422027,
+      "species": "ostreidae",
+      "label": "Fuseta (Wild)",
+      "region": "Algarve",
+      "count": "60 wild",
+      "date": "2025/6/8 (Wild)"
+    },
+    {
+      "lat": 37.051231,
+      "lng": -7.7422027,
+      "species": "mytilus",
+      "label": "Fuseta (Wild)",
+      "region": "Algarve",
+      "count": "58 wild",
+      "date": "2025/6/8 (Wild)"
+    },
+    {
+      "lat": 37.0457798,
+      "lng": -7.7508347,
+      "species": "decussatus",
+      "label": "Fuseta (Farm)",
+      "region": "Algarve",
+      "count": "60 farm",
+      "date": "2025/6/11 (Farm)"
+    },
+    {
+      "lat": 37.1139093,
+      "lng": -7.6314369,
+      "species": "decussatus",
+      "label": "Tavira (Farm)",
+      "region": "Algarve",
+      "count": "60 farm",
+      "date": "2025/6/11 (Farm)"
+    },
+    {
+      "lat": 37.1752715,
+      "lng": -7.4066535,
+      "species": "ostreidae",
+      "label": "Vila Real (Wild)",
+      "region": "Algarve",
+      "count": "45 wild",
+      "date": "2025/6/1 (Wild)"
+    },
+    {
+      "lat": 37.1733535,
+      "lng": -7.4055426,
+      "species": "mytilus",
+      "label": "Vila Real (Wild)",
+      "region": "Algarve",
+      "count": "62 wild",
+      "date": "2025/6/1 (Wild)"
+    },
+    {
+      "lat": 38.7839915,
+      "lng": -9.0911278,
+      "species": "ostreidae",
+      "label": "Lisbon (Wild)",
+      "region": "Setúbal & Lisbon",
+      "count": "50 wild",
+      "date": "2026/1/7 (Wild)"
+    },
+    {
+      "lat": 38.7590419,
+      "lng": -9.0907084,
+      "species": "mytilus",
+      "label": "Lisbon (Wild)",
+      "region": "Setúbal & Lisbon",
+      "count": "50 wild",
+      "date": "2026/1/7 (Wild)"
+    },
+    {
+      "lat": 38.8573501,
+      "lng": -9.0512852,
+      "species": "philippinarum",
+      "label": "Lisbon (Wild)",
+      "region": "Setúbal & Lisbon",
+      "count": "60 wild",
+      "date": "2025/6/18 (Wild)"
+    },
+    {
+      "lat": 38.5190509,
+      "lng": -8.8989846,
+      "species": "ostreidae",
+      "label": "Setúbal 1 (Wild)",
+      "region": "Setúbal & Lisbon",
+      "count": "50 wild",
+      "date": "2026/1/13 (Wild)"
+    },
+    {
+      "lat": 38.5190509,
+      "lng": -8.8989846,
+      "species": "mytilus",
+      "label": "Setúbal 1 (Wild)",
+      "region": "Setúbal & Lisbon",
+      "count": "35 wild",
+      "date": "2026/1/13 (Wild)"
+    },
+    {
+      "lat": 38.4867039,
+      "lng": -8.8175698,
+      "species": "ostreidae",
+      "label": "Setúbal 2 (Wild)",
+      "region": "Setúbal & Lisbon",
+      "count": "50 wild",
+      "date": "2026/1/13 (Wild)"
+    },
+    {
+      "lat": 38.4867039,
+      "lng": -8.8175698,
+      "species": "mytilus",
+      "label": "Setúbal 2 (Wild)",
+      "region": "Setúbal & Lisbon",
+      "count": "35 wild",
+      "date": "2026/1/13 (Wild)"
+    },
+    {
+      "lat": 40.7581408,
+      "lng": -8.7011651,
+      "species": "ostreidae",
+      "label": "Aveiro 1 (Wild)",
+      "region": "Aveiro",
+      "count": "60 wild",
+      "date": "2025/11/9 (Wild)"
+    },
+    {
+      "lat": 40.7581408,
+      "lng": -8.7011651,
+      "species": "mytilus",
+      "label": "Aveiro 1 (Wild)",
+      "region": "Aveiro",
+      "count": "60 wild",
+      "date": "2025/11/9 (Wild)"
+    },
+    {
+      "lat": 40.7554064,
+      "lng": -8.6998543,
+      "species": "philippinarum",
+      "label": "Aveiro 1 (Wild)",
+      "region": "Aveiro",
+      "count": "50 wild",
+      "date": "2025/12/19 (Wild)"
+    },
+    {
+      "lat": 40.6629854,
+      "lng": -8.7268224,
+      "species": "ostreidae",
+      "label": "Aveiro 2 (Wild)",
+      "region": "Aveiro",
+      "count": "60 wild",
+      "date": "2025/11/9 (Wild)"
+    },
+    {
+      "lat": 40.6629854,
+      "lng": -8.7268224,
+      "species": "mytilus",
+      "label": "Aveiro 2 (Wild)",
+      "region": "Aveiro",
+      "count": "60 wild",
+      "date": "2025/11/9 (Wild)"
+    },
+    {
+      "lat": 40.6653433,
+      "lng": -8.71665,
+      "species": "philippinarum",
+      "label": "Aveiro 2 (Wild)",
+      "region": "Aveiro",
+      "count": "50 wild",
+      "date": "2025/12/19 (Wild)"
+    },
+    {
+      "lat": 40.6145633,
+      "lng": -8.7392148,
+      "species": "mytilus",
+      "label": "Aveiro 3 (Wild)",
+      "region": "Aveiro",
+      "count": "60 wild",
+      "date": "2025/11/9 (Wild)"
+    },
+    {
+      "lat": 40.6088642,
+      "lng": -8.7485273,
+      "species": "mytilus",
+      "label": "Aveiro 4 (Wild)",
+      "region": "Aveiro",
+      "count": "60 wild",
+      "date": "2025/11/9 (Wild)"
+    },
+    {
+      "lat": 40.6074868,
+      "lng": -8.7459277,
+      "species": "philippinarum",
+      "label": "Aveiro 4 (Wild)",
+      "region": "Aveiro",
+      "count": "50 wild",
+      "date": "2025/12/19 (Wild)"
+    }
+  ]
+}

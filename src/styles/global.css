@@ -1,0 +1,217 @@
+/* ========================================
+   BivalvePlus — Global Styles (Pixel Art Theme)
+   ======================================== */
+
+/* Pixel art font — Press Start 2P from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- Color Palette (from background images) ---- */
+:root {
+  /* Primary: teal/ocean (bg1) */
+  --color-primary: #1d9a8c;
+  --color-primary-dark: #157a6f;
+  --color-primary-light: #2bbfad;
+
+  /* Secondary: green (bg2) */
+  --color-secondary: #6b8e3d;
+  --color-secondary-dark: #4a6d2a;
+  --color-secondary-light: #8ab44f;
+
+  /* Accent: sandy beige (bg3) */
+  --color-accent: #d4b896;
+  --color-accent-dark: #b89b7a;
+  --color-accent-light: #e8d5bc;
+
+  /* Neutral: grey-stone (bg4) */
+  --color-neutral: #7a7a6e;
+  --color-neutral-dark: #5a5a50;
+  --color-neutral-light: #9a9a8e;
+
+  /* UI colors */
+  --color-bg: #f8f6f2;
+  --color-text: #2c2c2c;
+  --color-text-light: #5a5a5a;
+  --color-white: #ffffff;
+  --color-border: #d0cec8;
+
+  /* Pixel border */
+  --pixel-border: 3px solid var(--color-text);
+  --pixel-shadow: 3px 3px 0px var(--color-text);
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 5rem;
+
+  /* Layout */
+  --max-width: 1200px;
+  --header-height: 180px;
+}
+
+/* ---- Typography ---- */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Arial', 'Helvetica Neue', sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Pixel font for headings and nav */
+h1, h2, h3,
+.pixel-font,
+.nav-link,
+.section-title {
+  font-family: 'Press Start 2P', monospace;
+  line-height: 1.4;
+}
+
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.1rem; }
+h3 { font-size: 0.9rem; }
+h4 { font-size: 0.85rem; }
+
+p {
+  margin-bottom: var(--space-md);
+  line-height: 1.8;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+/* ---- Pixel Art UI Elements ---- */
+
+/* Pixel-style border box */
+.pixel-box {
+  border: var(--pixel-border);
+  box-shadow: var(--pixel-shadow);
+  background: var(--color-white);
+  image-rendering: pixelated;
+}
+
+/* Pixel button */
+.pixel-btn {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.7rem;
+  padding: 0.6rem 1.2rem;
+  border: var(--pixel-border);
+  box-shadow: var(--pixel-shadow);
+  background: var(--color-white);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.pixel-btn:hover {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0px var(--color-text);
+}
+.pixel-btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: none;
+}
+
+.pixel-btn--primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+.pixel-btn--secondary {
+  background: var(--color-secondary);
+  color: var(--color-white);
+}
+
+/* Pixel divider */
+.pixel-divider {
+  height: 4px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--color-text) 0px,
+    var(--color-text) 4px,
+    transparent 4px,
+    transparent 8px
+  );
+  margin: var(--space-lg) 0;
+}
+
+/* ---- Layout Utilities ---- */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.section {
+  padding: var(--space-2xl) 0;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 60px;
+  }
+  h1 { font-size: 1rem; }
+  h2 { font-size: 0.85rem; }
+  h3 { font-size: 0.75rem; }
+
+  .container {
+    padding: 0 var(--space-md);
+  }
+}
+
+/* ---- Image rendering for pixel art assets ---- */
+.pixel-art {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* ---- Scrollbar (pixel-themed) ---- */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border: 2px solid var(--color-bg);
+}
+
+/* ---- Animations ---- */
+@keyframes pixel-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: pixel-fade-in 0.5s ease-out forwards;
+}

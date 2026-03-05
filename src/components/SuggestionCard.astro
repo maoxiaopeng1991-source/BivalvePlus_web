@@ -1,0 +1,72 @@
+---
+interface Props {
+  title: string;
+  pdfUrl?: string;
+  downloadLabel: string;
+  commentsPlaceholder: string;
+}
+
+const { title, pdfUrl, downloadLabel, commentsPlaceholder } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<article class="suggestion-card pixel-box">
+  <div class="suggestion-card__header">
+    <h3 class="suggestion-card__title">{title}</h3>
+    {pdfUrl && (
+      <a
+        href={pdfUrl.startsWith('http') ? pdfUrl : `${base}${pdfUrl}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="pixel-btn pixel-btn--primary suggestion-card__download"
+      >
+        {downloadLabel}
+      </a>
+    )}
+  </div>
+  <div class="suggestion-card__comments">
+    <p class="suggestion-card__placeholder pixel-font">{commentsPlaceholder}</p>
+    <!-- utterances will be injected here after deployment -->
+    <div class="utterances-container" data-suggestion-title={title}></div>
+  </div>
+</article>
+
+<style>
+  .suggestion-card {
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .suggestion-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .suggestion-card__title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-text);
+    flex: 1;
+  }
+
+  .suggestion-card__download {
+    font-size: 0.55rem;
+    white-space: nowrap;
+  }
+
+  .suggestion-card__comments {
+    border-top: 2px dashed var(--color-accent);
+    padding-top: 1rem;
+  }
+
+  .suggestion-card__placeholder {
+    font-size: 0.55rem;
+    color: var(--color-neutral);
+    text-align: center;
+    padding: 1rem 0;
+  }
+</style>

@@ -1,0 +1,127 @@
+{
+  "site": {
+    "title": "BivalvePlus",
+    "slogan": "Genetic resources for economically important bivalves in Portugal"
+  },
+  "nav": {
+    "home": "Homepage",
+    "about": "About Us",
+    "events": "Events",
+    "release": "Release",
+    "genetic": "Genetic Resources"
+  },
+  "nav_events": {
+    "sampling": "Sampling",
+    "experiment": "Experiment",
+    "dissemination": "Dissemination",
+    "conference": "Conference",
+    "workshop": "Workshop"
+  },
+  "nav_release": {
+    "genome": "Genome",
+    "population_genome": "Population Genome",
+    "other_genetic": "Other Genetic Resources",
+    "suggestions": "Suggestions & Comments",
+    "publications": "Publications"
+  },
+  "homepage": {
+    "block1_title": "About the Project",
+    "block1_desc": "Technological tools for resilience and safety of bivalve production",
+    "block2_title": "Events & Activities",
+    "block2_desc": "Sampling, experiments, dissemination and conferences",
+    "block3_title": "Data Release",
+    "block3_desc": "Genomes, population data, publications and strategies",
+    "block4_title": "Genetic Resources",
+    "block4_desc": "Population genetic information collector for four bivalve species"
+  },
+  "about": {
+    "aims_title": "Aims",
+    "basic_info_title": "Basic Information",
+    "project_info_title": "Project Information",
+    "title_pt": "Title (Portuguese)",
+    "title_en": "Title (English)",
+    "abstract": "Abstract",
+    "objectives": "Objectives",
+    "milestones": "Milestones",
+    "team_title": "Team Members",
+    "stakeholders_title": "Stakeholders",
+    "duration": "Project Duration",
+    "budget": "Budget",
+    "funding": "Funding Agency",
+    "coordinator": "Coordinator",
+    "reference": "Reference"
+  },
+  "footer": {
+    "contact": "Contact",
+    "address": "Comparative Endocrinology and Integrative Biology, Centre of Marine Sciences, University of Algarve, Campus de Gambelas, 8005-139 Faro, Portugal",
+    "funded_by": "Funded by"
+  },
+  "release": {
+    "page_title": "Data Release",
+    "coming_soon": "Coming soon. Check back later!",
+    "genome_desc": "Reference genome assemblies for bivalve species",
+    "population_desc": "Population-level whole genome sequencing data",
+    "other_desc": "Other genetic resources and molecular markers",
+    "suggestions_desc": "Management strategies, suggestions and community comments",
+    "publications_desc": "Peer-reviewed publications from the BivalvePlus project",
+    "download_pdf": "Download PDF",
+    "comments_placeholder": "Comments will be available after deployment.",
+    "doi": "DOI",
+    "table_species": "Species",
+    "table_assembly": "Assembly",
+    "table_version": "Version",
+    "table_size": "Size",
+    "table_database": "Database",
+    "table_accession": "Accession",
+    "table_link": "Link",
+    "table_population": "Population",
+    "table_seq_type": "Seq. Type",
+    "table_data_size": "Data Size",
+    "table_resource_type": "Resource Type",
+    "table_marker": "Marker"
+  },
+  "events": {
+    "page_title": "Events & Activities",
+    "no_events": "No events yet. Check back soon!",
+    "sampling_map_title": "Sampling Sites",
+    "view_details": "View details",
+    "all_categories": "All"
+  },
+  "nav_genetic": {
+    "genome": "Genome",
+    "population_genome": "Population Genome",
+    "dna_markers": "DNA Markers"
+  },
+  "genetic": {
+    "page_title": "Genetic Resources Collector",
+    "coming_soon": "Data collection in progress. Check back soon!",
+    "last_updated": "Last updated",
+    "genome_desc": "Reference genome assemblies for the four target bivalve species, collected from NCBI and ENA.",
+    "population_desc": "Population-level whole genome sequencing and resequencing datasets with paired-end read download links.",
+    "markers_desc": "DNA marker sequences (COI, ITS, 16S, 18S) from NCBI, ENA and BOLD databases.",
+    "table_species": "Species",
+    "table_assembly": "Assembly",
+    "table_version": "Version",
+    "table_size": "Size",
+    "table_level": "Level",
+    "table_database": "Database",
+    "table_accession": "Accession",
+    "table_link": "Link",
+    "table_bioproject": "BioProject",
+    "table_platform": "Platform",
+    "table_data_size": "Data Size",
+    "table_samples": "Samples",
+    "table_link_r1": "Link R1",
+    "table_link_r2": "Link R2",
+    "table_marker": "Marker",
+    "table_gene": "Gene",
+    "table_sampling_site": "Sampling Site"
+  },
+  "common": {
+    "learn_more": "Learn more",
+    "download_csv": "Download CSV",
+    "search": "Search",
+    "loading": "Loading...",
+    "no_results": "No results found"
+  }
+}

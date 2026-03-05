@@ -1,0 +1,127 @@
+{
+  "site": {
+    "title": "BivalvePlus",
+    "slogan": "Recursos genéticos para bivalves economicamente importantes em Portugal"
+  },
+  "nav": {
+    "home": "Início",
+    "about": "Sobre Nós",
+    "events": "Eventos",
+    "release": "Publicações",
+    "genetic": "Recursos Genéticos"
+  },
+  "nav_events": {
+    "sampling": "Amostragem",
+    "experiment": "Experiências",
+    "dissemination": "Divulgação",
+    "conference": "Conferências",
+    "workshop": "Workshops"
+  },
+  "nav_release": {
+    "genome": "Genoma",
+    "population_genome": "Genoma Populacional",
+    "other_genetic": "Outros Recursos Genéticos",
+    "suggestions": "Sugestões e Comentários",
+    "publications": "Publicações"
+  },
+  "homepage": {
+    "block1_title": "Sobre o Projeto",
+    "block1_desc": "Ferramentas tecnológicas para resiliência e segurança da produção de bivalves",
+    "block2_title": "Eventos e Atividades",
+    "block2_desc": "Amostragem, experiências, divulgação e conferências",
+    "block3_title": "Publicação de Dados",
+    "block3_desc": "Genomas, dados populacionais, publicações e estratégias",
+    "block4_title": "Recursos Genéticos",
+    "block4_desc": "Coletor de informações genéticas populacionais para quatro espécies de bivalves"
+  },
+  "about": {
+    "aims_title": "Objetivos",
+    "basic_info_title": "Informações Básicas",
+    "project_info_title": "Informações do Projeto",
+    "title_pt": "Título (Português)",
+    "title_en": "Título (Inglês)",
+    "abstract": "Resumo",
+    "objectives": "Objetivos",
+    "milestones": "Marcos",
+    "team_title": "Membros da Equipa",
+    "stakeholders_title": "Partes Interessadas",
+    "duration": "Duração do Projeto",
+    "budget": "Orçamento",
+    "funding": "Agência de Financiamento",
+    "coordinator": "Coordenador",
+    "reference": "Referência"
+  },
+  "footer": {
+    "contact": "Contacto",
+    "address": "Endocrinologia Comparativa e Biologia Integrativa, Centro de Ciências do Mar, Universidade do Algarve, Campus de Gambelas, 8005-139 Faro, Portugal",
+    "funded_by": "Financiado por"
+  },
+  "release": {
+    "page_title": "Publicação de Dados",
+    "coming_soon": "Em breve. Volte mais tarde!",
+    "genome_desc": "Genomas de referência para espécies de bivalves",
+    "population_desc": "Dados de sequenciação genómica a nível populacional",
+    "other_desc": "Outros recursos genéticos e marcadores moleculares",
+    "suggestions_desc": "Estratégias de gestão, sugestões e comentários da comunidade",
+    "publications_desc": "Publicações científicas do projeto BivalvePlus",
+    "download_pdf": "Descarregar PDF",
+    "comments_placeholder": "Comentários estarão disponíveis após a implantação.",
+    "doi": "DOI",
+    "table_species": "Espécie",
+    "table_assembly": "Montagem",
+    "table_version": "Versão",
+    "table_size": "Tamanho",
+    "table_database": "Base de Dados",
+    "table_accession": "Acesso",
+    "table_link": "Ligação",
+    "table_population": "População",
+    "table_seq_type": "Tipo Seq.",
+    "table_data_size": "Tamanho Dados",
+    "table_resource_type": "Tipo de Recurso",
+    "table_marker": "Marcador"
+  },
+  "events": {
+    "page_title": "Eventos e Atividades",
+    "no_events": "Ainda não há eventos. Volte em breve!",
+    "sampling_map_title": "Locais de Amostragem",
+    "view_details": "Ver detalhes",
+    "all_categories": "Todos"
+  },
+  "nav_genetic": {
+    "genome": "Genoma",
+    "population_genome": "Genoma Populacional",
+    "dna_markers": "Marcadores de ADN"
+  },
+  "genetic": {
+    "page_title": "Coletor de Recursos Genéticos",
+    "coming_soon": "Recolha de dados em curso. Volte em breve!",
+    "last_updated": "Última atualização",
+    "genome_desc": "Genomas de referência para as quatro espécies-alvo de bivalves, recolhidos do NCBI e ENA.",
+    "population_desc": "Dados de sequenciação genómica a nível populacional com ligações de descarregamento de leituras paired-end.",
+    "markers_desc": "Sequências de marcadores de ADN (COI, ITS, 16S, 18S) das bases de dados NCBI, ENA e BOLD.",
+    "table_species": "Espécie",
+    "table_assembly": "Montagem",
+    "table_version": "Versão",
+    "table_size": "Tamanho",
+    "table_level": "Nível",
+    "table_database": "Base de Dados",
+    "table_accession": "Acesso",
+    "table_link": "Ligação",
+    "table_bioproject": "BioProjeto",
+    "table_platform": "Plataforma",
+    "table_data_size": "Tamanho Dados",
+    "table_samples": "Amostras",
+    "table_link_r1": "Ligação R1",
+    "table_link_r2": "Ligação R2",
+    "table_marker": "Marcador",
+    "table_gene": "Gene",
+    "table_sampling_site": "Local de Amostragem"
+  },
+  "common": {
+    "learn_more": "Saber mais",
+    "download_csv": "Descarregar CSV",
+    "search": "Pesquisar",
+    "loading": "A carregar...",
+    "no_results": "Nenhum resultado encontrado"
+  }
+}

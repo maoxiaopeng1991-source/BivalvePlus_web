@@ -1,0 +1,348 @@
+---
+interface SpeciesConfig {
+  [key: string]: {
+    name: string;
+    color: string;
+    image: string;
+  };
+}
+
+interface MarkerData {
+  lat: number;
+  lng: number;
+  species: string;
+  label: string;
+  region: string;
+  count: string;
+  date: string;
+}
+
+interface Props {
+  species: SpeciesConfig;
+  markers: MarkerData[];
+  title: string;
+}
+
+const { species, markers, title } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// Build legend items with image paths
+const legendItems = Object.entries(species).map(([key, sp]) => ({
+  key,
+  name: sp.name,
+  color: sp.color,
+  imageSrc: `${base}/images/species/${sp.image}`,
+}));
+---
+
+<div class="sampling-map-section">
+  <h3 class="sampling-map__title pixel-font">{title}</h3>
+  <div class="map-with-legend">
+    <!-- Map -->
+    <div class="sampling-map pixel-box" id="sampling-map"
+      data-markers={JSON.stringify(markers)}
+      data-species={JSON.stringify(species)}>
+      <div class="sampling-map__loading pixel-font">Loading map...</div>
+    </div>
+
+    <!-- Legend -->
+    <div class="map-legend pixel-box">
+      {legendItems.map((item) => (
+        <div class="legend-item" data-species={item.key}>
+          <div class="legend-color" style={`background-color: ${item.color}`}></div>
+          <img src={item.imageSrc} alt={item.name} class="legend-img pixel-art" />
+          <span class="legend-label">{item.name}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+<style>
+  .sampling-map-section {
+    margin-bottom: 2rem;
+  }
+
+  .sampling-map__title {
+    font-size: 0.7rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .map-with-legend {
+    display: flex;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  /* Map */
+  .sampling-map {
+    flex: 1;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    min-width: 0;
+  }
+
+  .sampling-map__loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.6rem;
+    color: var(--color-neutral);
+  }
+
+  /* Legend */
+  .map-legend {
+    width: 180px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0.8rem;
+    height: 500px;
+    box-sizing: border-box;
+  }
+
+  .legend-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.2rem;
+    padding: 0.3rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.15s ease;
+    overflow: hidden;
+    flex: 1;
+    justify-content: center;
+    min-height: 0;
+  }
+
+  .legend-item:hover {
+    border-color: var(--color-text);
+    background: var(--color-bg);
+  }
+
+  .legend-item.legend-item--dimmed {
+    opacity: 0.3;
+  }
+
+  .legend-color {
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--color-text);
+    box-shadow: 1px 1px 0px var(--color-text);
+    flex-shrink: 0;
+  }
+
+  .legend-img {
+    width: auto;
+    height: 55px;
+    max-width: 100%;
+    object-fit: contain;
+    image-rendering: pixelated;
+  }
+
+  .legend-label {
+    font-size: 0.55rem;
+    font-style: italic;
+    color: var(--color-text);
+    line-height: 1.2;
+  }
+
+  /* Leaflet popup overrides */
+  .sampling-map :global(.leaflet-popup-content-wrapper) {
+    border-radius: 0;
+    border: 3px solid #2c2c2c;
+    box-shadow: 3px 3px 0px #2c2c2c;
+  }
+
+  .sampling-map :global(.leaflet-popup-content) {
+    margin: 0.8rem;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .sampling-map :global(.leaflet-popup-content .popup-site) {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.5rem;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+
+  .sampling-map :global(.leaflet-popup-content .popup-species) {
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .sampling-map :global(.leaflet-popup-content .popup-detail) {
+    font-size: 0.8rem;
+    color: #555;
+  }
+
+  .sampling-map :global(.leaflet-popup-tip) {
+    border-top-color: #2c2c2c;
+  }
+
+  @media (max-width: 768px) {
+    .map-with-legend {
+      flex-direction: column;
+    }
+
+    .sampling-map {
+      height: 350px;
+    }
+
+    .map-legend {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .legend-item {
+      flex-direction: row;
+      gap: 0.4rem;
+      padding: 0.3rem 0.5rem;
+    }
+
+    .legend-img {
+      width: 35px;
+    }
+
+    .legend-label {
+      font-size: 0.6rem;
+    }
+  }
+</style>
+
+<script>
+  let mapInstance: any = null;
+
+  function buildMap() {
+    const mapEl = document.getElementById('sampling-map');
+    if (!mapEl) return;
+
+    const markersData = JSON.parse(mapEl.dataset.markers || '[]');
+    const speciesData = JSON.parse(mapEl.dataset.species || '{}');
+
+    mapEl.innerHTML = '';
+
+    // @ts-ignore
+    const L = window.L;
+    const map = L.map('sampling-map').setView([39.0, -8.5], 7);
+    mapInstance = map;
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      maxZoom: 18,
+    }).addTo(map);
+
+    // Create marker icons per species color
+    const icons: Record<string, any> = {};
+    for (const [key, sp] of Object.entries(speciesData) as [string, { color: string }][]) {
+      icons[key] = L.divIcon({
+        className: 'pixel-marker',
+        html: `<div style="width:14px;height:14px;background:${sp.color};border:3px solid #2c2c2c;box-shadow:2px 2px 0 #2c2c2c;"></div>`,
+        iconSize: [20, 20],
+        iconAnchor: [10, 10],
+        popupAnchor: [0, -12],
+      });
+    }
+
+    // Store markers by species for filtering
+    const markerLayers: Record<string, any[]> = {};
+    const bounds: [number, number][] = [];
+
+    for (const m of markersData) {
+      const sp = speciesData[m.species] || { name: m.species, color: '#888' };
+      const popup = `
+        <span class="popup-site" style="color:${sp.color}">${m.label}</span>
+        <span class="popup-species">${sp.name}</span><br/>
+        <span class="popup-detail">${m.count} individuals — ${m.date}</span>
+      `;
+      const marker = L.marker([m.lat, m.lng], { icon: icons[m.species] || icons.ostreidae })
+        .addTo(map)
+        .bindPopup(popup);
+
+      if (!markerLayers[m.species]) markerLayers[m.species] = [];
+      markerLayers[m.species].push(marker);
+      bounds.push([m.lat, m.lng]);
+    }
+
+    if (bounds.length > 0) {
+      map.fitBounds(bounds, { padding: [40, 40], maxZoom: 9 });
+    }
+
+    // Legend click to toggle species visibility
+    const legendItems = document.querySelectorAll('.legend-item');
+    const hiddenSpecies = new Set<string>();
+
+    legendItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const species = item.getAttribute('data-species');
+        if (!species) return;
+
+        if (hiddenSpecies.has(species)) {
+          hiddenSpecies.delete(species);
+          item.classList.remove('legend-item--dimmed');
+          (markerLayers[species] || []).forEach((m: any) => m.addTo(map));
+        } else {
+          hiddenSpecies.add(species);
+          item.classList.add('legend-item--dimmed');
+          (markerLayers[species] || []).forEach((m: any) => map.removeLayer(m));
+        }
+      });
+    });
+  }
+
+  function initMap() {
+    const mapEl = document.getElementById('sampling-map');
+    if (!mapEl) return;
+
+    // Already initialized — just fix tile rendering after tab switch
+    if (mapInstance) {
+      setTimeout(() => mapInstance.invalidateSize(), 100);
+      return;
+    }
+
+    // @ts-ignore
+    if (window.L) {
+      buildMap();
+      return;
+    }
+
+    // Load Leaflet CSS
+    if (!document.querySelector('link[href*="leaflet"]')) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+      document.head.appendChild(link);
+    }
+
+    // Load Leaflet JS
+    const script = document.createElement('script');
+    script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+    script.onload = () => buildMap();
+    document.body.appendChild(script);
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const hash = window.location.hash.replace('#', '');
+    if (!hash || hash === 'sampling') {
+      initMap();
+    }
+  });
+
+  document.addEventListener('tab-switched', ((e: CustomEvent) => {
+    if (e.detail === 'sampling') {
+      initMap();
+    }
+  }) as EventListener);
+</script>

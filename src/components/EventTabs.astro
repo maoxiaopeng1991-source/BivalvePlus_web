@@ -1,0 +1,72 @@
+---
+interface Props {
+  categories: { key: string; label: string }[];
+  activeCategory?: string;
+}
+
+const { categories, activeCategory = 'sampling' } = Astro.props;
+---
+
+<nav class="event-tabs" role="tablist" aria-label="Event categories">
+  {categories.map((cat) => (
+    <button
+      class={`event-tab pixel-font ${cat.key === activeCategory ? 'event-tab--active' : ''}`}
+      role="tab"
+      aria-selected={cat.key === activeCategory ? 'true' : 'false'}
+      data-category={cat.key}
+    >
+      {cat.label}
+    </button>
+  ))}
+</nav>
+
+<style>
+  .event-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 1.5rem 0;
+    border-bottom: 3px solid var(--color-text);
+    margin-bottom: 2rem;
+  }
+
+  .event-tab {
+    font-size: 0.6rem;
+    padding: 0.6rem 1rem;
+    border: 3px solid var(--color-text);
+    background: var(--color-white);
+    color: var(--color-text);
+    cursor: pointer;
+    transition: all 0.15s ease;
+    box-shadow: 3px 3px 0px var(--color-text);
+    white-space: nowrap;
+  }
+
+  .event-tab:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
+  }
+
+  .event-tab:active {
+    transform: translateY(2px);
+    box-shadow: 1px 1px 0px var(--color-text);
+  }
+
+  .event-tab--active {
+    background: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: 3px 3px 0px var(--color-text);
+  }
+
+  .event-tab--active:hover {
+    background: var(--color-primary);
+  }
+
+  @media (max-width: 768px) {
+    .event-tab {
+      font-size: 0.5rem;
+      padding: 0.5rem 0.7rem;
+    }
+  }
+</style>

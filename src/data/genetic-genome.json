@@ -1,0 +1,315 @@
+{
+  "last_updated": "2026-03-05T18:17:19.765109+00:00",
+  "rows": [
+    {
+      "species": "Ruditapes decussatus",
+      "assembly": "xbRudDecu",
+      "version": "1",
+      "size": "1398 Mb",
+      "level": "Chromosome",
+      "database": "NCBI",
+      "accession": "GCA_977926895.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_977926895.1/"
+    },
+    {
+      "species": "Ruditapes philippinarum",
+      "assembly": "ASM2657151v2",
+      "version": "2",
+      "size": "1408 Mb",
+      "level": "Contig",
+      "database": "NCBI",
+      "accession": "GCA_026571515.2",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_026571515.2/"
+    },
+    {
+      "species": "Ruditapes philippinarum",
+      "assembly": "ASM2657151v2",
+      "version": "1",
+      "size": "1408 Mb",
+      "level": "Contig",
+      "database": "NCBI",
+      "accession": "GCF_026571515.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_026571515.1/"
+    },
+    {
+      "species": "Ruditapes philippinarum",
+      "assembly": "xbRudPhil6.1",
+      "version": "1",
+      "size": "1341 Mb",
+      "level": "Chromosome",
+      "database": "NCBI",
+      "accession": "GCA_964294305.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_964294305.1/"
+    },
+    {
+      "species": "Ruditapes philippinarum",
+      "assembly": "ASM5485632v1",
+      "version": "1",
+      "size": "1290 Mb",
+      "level": "Chromosome",
+      "database": "NCBI",
+      "accession": "GCA_054856325.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_054856325.1/"
+    },
+    {
+      "species": "Ruditapes philippinarum",
+      "assembly": "xbRudPhil1.hap1.1",
+      "version": "1",
+      "size": "1342 Mb",
+      "level": "Chromosome",
+      "database": "NCBI",
+      "accession": "GCA_977019875.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_977019875.1/"
+    },
+    {
+      "species": "Ruditapes philippinarum",
+      "assembly": "DLOU_RudPhi1.0",
+      "version": "1",
+      "size": "1365 Mb",
+      "level": "Chromosome",
+      "database": "NCBI",
+      "accession": "GCA_052148955.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_052148955.1/"
+    },
+    {
+      "species": "Ruditapes philippinarum",
+      "assembly": "ASM902601v1",
+      "version": "1",
+      "size": "1123 Mb",
+      "level": "Chromosome",
+      "database": "NCBI",
+      "accession": "GCA_009026015.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009026015.1/"
+    },
+    {
+      "species": "Ruditapes philippinarum",
+      "assembly": "xbRudPhil1.hap2.1",
+      "version": "1",
+      "size": "1373 Mb",
+      "level": "Scaffold",
+      "database": "NCBI",
+      "accession": "GCA_977019795.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_977019795.1/"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "assembly": "xbMytGall1.hap1.1",
+      "version": "1",
+      "size": "1385 Mb",
+      "level": "Chromosome",
+      "database": "NCBI",
+      "accession": "GCA_965363235.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_965363235.1/"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "assembly": "xbMytGall1.hap1.1",
+      "version": "1",
+      "size": "1385 Mb",
+      "level": "Chromosome",
+      "database": "NCBI",
+      "accession": "GCF_965363235.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_965363235.1/"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "assembly": "MytGallo_primary_0.1",
+      "version": "1",
+      "size": "1414 Mb",
+      "level": "Chromosome",
+      "database": "NCBI",
+      "accession": "GCA_037788925.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_037788925.1/"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "assembly": "MgalMED",
+      "version": "1",
+      "size": "1659 Mb",
+      "level": "Chromosome",
+      "database": "NCBI",
+      "accession": "GCA_025277285.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_025277285.1/"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "assembly": "MytGallo1_primary",
+      "version": "1",
+      "size": "1416 Mb",
+      "level": "Scaffold",
+      "database": "NCBI",
+      "accession": "GCA_963513925.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_963513925.1/"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "assembly": "xbMytGall1.hap2.1",
+      "version": "1",
+      "size": "1388 Mb",
+      "level": "Scaffold",
+      "database": "NCBI",
+      "accession": "GCA_965363225.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_965363225.1/"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "assembly": "MytGallo_alternate_0.1",
+      "version": "1",
+      "size": "1567 Mb",
+      "level": "Scaffold",
+      "database": "NCBI",
+      "accession": "GCA_037788815.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_037788815.1/"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "assembly": "MGAL_10",
+      "version": "1",
+      "size": "1282 Mb",
+      "level": "Scaffold",
+      "database": "NCBI",
+      "accession": "GCA_900618805.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900618805.1/"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "assembly": "ASM167691v1",
+      "version": "1",
+      "size": "1500 Mb",
+      "level": "Scaffold",
+      "database": "NCBI",
+      "accession": "GCA_001676915.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001676915.1/"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "assembly": "mussel1.0",
+      "version": "1",
+      "size": "1623 Mb",
+      "level": "Contig",
+      "database": "NCBI",
+      "accession": "GCA_000715055.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000715055.1/"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "assembly": "ASM4841453v1",
+      "version": "1",
+      "size": "1463 Mb",
+      "level": "Chromosome",
+      "database": "NCBI",
+      "accession": "GCA_048414535.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_048414535.1/"
+    },
+    {
+      "species": "Magallana gigas",
+      "assembly": "xbMagGiga1.1",
+      "version": "1",
+      "size": "564 Mb",
+      "level": "Chromosome",
+      "database": "NCBI",
+      "accession": "GCA_963853765.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_963853765.1/"
+    },
+    {
+      "species": "Magallana gigas",
+      "assembly": "xbMagGiga1.1",
+      "version": "1",
+      "size": "564 Mb",
+      "level": "Chromosome",
+      "database": "NCBI",
+      "accession": "GCF_963853765.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_963853765.1/"
+    },
+    {
+      "species": "Magallana gigas",
+      "assembly": "ASM1103280v1",
+      "version": "1",
+      "size": "587 Mb",
+      "level": "Chromosome",
+      "database": "NCBI",
+      "accession": "GCA_011032805.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_011032805.1/"
+    },
+    {
+      "species": "Magallana gigas",
+      "assembly": "ASM2576568v3",
+      "version": "3",
+      "size": "606 Mb",
+      "level": "Chromosome",
+      "database": "NCBI",
+      "accession": "GCA_025765685.3",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_025765685.3/"
+    },
+    {
+      "species": "Magallana gigas",
+      "assembly": "xbMagGiga1.1 alternate haplotype",
+      "version": "1",
+      "size": "604 Mb",
+      "level": "Scaffold",
+      "database": "NCBI",
+      "accession": "GCA_963853805.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_963853805.1/"
+    },
+    {
+      "species": "Magallana gigas",
+      "assembly": "NWPU_Cgig_v2",
+      "version": "2",
+      "size": "588 Mb",
+      "level": "Contig",
+      "database": "NCBI",
+      "accession": "GCA_005518195.2",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_005518195.2/"
+    },
+    {
+      "species": "Magallana gigas",
+      "assembly": "ASM29789v2",
+      "version": "2",
+      "size": "565 Mb",
+      "level": "Scaffold",
+      "database": "NCBI",
+      "accession": "GCA_000297895.2",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000297895.2/"
+    },
+    {
+      "species": "Magallana gigas",
+      "assembly": "cgigas_uk_roslin_v1",
+      "version": "1",
+      "size": "648 Mb",
+      "level": "Chromosome",
+      "database": "NCBI",
+      "accession": "GCA_902806645.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_902806645.1/"
+    },
+    {
+      "species": "Magallana gigas",
+      "assembly": "cgigas_uk_roslin_v1",
+      "version": "1",
+      "size": "648 Mb",
+      "level": "Chromosome",
+      "database": "NCBI",
+      "accession": "GCF_902806645.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_902806645.1/"
+    },
+    {
+      "species": "Magallana gigas",
+      "assembly": "OsHV1_ONT_7_Kits_Canu_0.1_polished_1x_medaka",
+      "version": "1",
+      "size": "0 Mb",
+      "level": "Chromosome",
+      "database": "NCBI",
+      "accession": "GCA_964656485.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_964656485.1/"
+    },
+    {
+      "species": "Ruditapes philippinarum",
+      "assembly": "UNPD_Rphi1_1",
+      "version": "1",
+      "size": "0 Mb",
+      "level": "chromosome",
+      "database": "ENA",
+      "accession": "GCA_982114075",
+      "link": "https://www.ebi.ac.uk/ena/browser/view/GCA_982114075"
+    }
+  ]
+}

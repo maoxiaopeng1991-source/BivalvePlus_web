@@ -1,0 +1,12 @@
+{
+  "columns": [
+    "species",
+    "population",
+    "seq_type",
+    "data_size",
+    "database",
+    "accession",
+    "link"
+  ],
+  "rows": []
+}
