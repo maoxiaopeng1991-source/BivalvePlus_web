@@ -1,50 +1,6 @@
 {
-  "last_updated": "2026-03-05T18:17:46.491974+00:00",
+  "last_updated": "2026-03-05T22:05:44.150611+00:00",
   "rows": [
-    {
-      "species": "Ruditapes decussatus",
-      "bioproject": "PRJEB104997",
-      "platform": "Illumina NovaSeq 6000",
-      "data_size": "0.0 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "ERR15995337",
-      "link_r1": "https://www.ebi.ac.uk/ena/browser/view/ERR15995337",
-      "link_r2": "NUL"
-    },
-    {
-      "species": "Ruditapes decussatus",
-      "bioproject": "PRJEB104997",
-      "platform": "Illumina NovaSeq 6000",
-      "data_size": "52.9 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "ERR15995341",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR159/041/ERR15995341/ERR15995341_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR159/041/ERR15995341/ERR15995341_2.fastq.gz"
-    },
-    {
-      "species": "Ruditapes decussatus",
-      "bioproject": "PRJEB20113",
-      "platform": "Illumina HiSeq 2500",
-      "data_size": "1.5 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "ERR1894900",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR189/000/ERR1894900/ERR1894900.fastq.gz",
-      "link_r2": "NUL"
-    },
-    {
-      "species": "Ruditapes decussatus",
-      "bioproject": "PRJEB20113",
-      "platform": "Illumina HiSeq 2500",
-      "data_size": "1.4 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "ERR1894902",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR189/002/ERR1894902/ERR1894902.fastq.gz",
-      "link_r2": "NUL"
-    },
     {
       "species": "Ruditapes decussatus",
       "bioproject": "PRJEB104997",
@@ -131,6 +87,50 @@
       "database": "ENA",
       "accession": "ERR1894906",
       "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR189/006/ERR1894906/ERR1894906.fastq.gz",
+      "link_r2": "NUL"
+    },
+    {
+      "species": "Ruditapes decussatus",
+      "bioproject": "PRJEB104997",
+      "platform": "Illumina NovaSeq 6000",
+      "data_size": "0.0 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "ERR15995337",
+      "link_r1": "https://www.ebi.ac.uk/ena/browser/view/ERR15995337",
+      "link_r2": "NUL"
+    },
+    {
+      "species": "Ruditapes decussatus",
+      "bioproject": "PRJEB104997",
+      "platform": "Illumina NovaSeq 6000",
+      "data_size": "52.9 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "ERR15995341",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR159/041/ERR15995341/ERR15995341_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR159/041/ERR15995341/ERR15995341_2.fastq.gz"
+    },
+    {
+      "species": "Ruditapes decussatus",
+      "bioproject": "PRJEB20113",
+      "platform": "Illumina HiSeq 2500",
+      "data_size": "1.5 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "ERR1894900",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR189/000/ERR1894900/ERR1894900.fastq.gz",
+      "link_r2": "NUL"
+    },
+    {
+      "species": "Ruditapes decussatus",
+      "bioproject": "PRJEB20113",
+      "platform": "Illumina HiSeq 2500",
+      "data_size": "1.4 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "ERR1894902",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR189/002/ERR1894902/ERR1894902.fastq.gz",
       "link_r2": "NUL"
     },
     {
