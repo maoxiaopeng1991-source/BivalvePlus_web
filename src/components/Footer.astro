@@ -23,9 +23,11 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       <div class="footer__funding">
         <p class="pixel-font footer__label">{t(locale, 'footer.funded_by')}</p>
         <div class="footer__fund-logos">
-          <img src={`${base}/images/logos/logo-fct.png`} alt="FCT" class="fund-logo" />
-          <img src={`${base}/images/logos/logo-portugal-2030.png`} alt="Portugal 2030" class="fund-logo" />
-          <img src={`${base}/images/logos/logo-algarve-2030.png`} alt="Algarve 2030" class="fund-logo" />
+          <img
+            src={`${base}/images/logos/funded-logos.png`}
+            alt="FCT, República Portuguesa, Algarve 2030, Portugal 2030, Cofinanciado pela União Europeia"
+            class="fund-logo-banner"
+          />
         </div>
       </div>
     </div>
@@ -110,14 +112,15 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     flex-wrap: wrap;
   }
 
-  .fund-logo {
-    height: 44px;
-    width: auto;
+  .fund-logo-banner {
+    max-width: 100%;
+    height: auto;
+    max-height: 52px;
     opacity: 0.9;
     transition: opacity 0.2s;
   }
 
-  .fund-logo:hover {
+  .fund-logo-banner:hover {
     opacity: 1;
   }
 
