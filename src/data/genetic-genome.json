@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-09T08:00:51.720980+00:00",
+  "last_updated": "2026-03-16T09:17:26.652354+00:00",
   "rows": [
     {
       "species": "Ruditapes decussatus",
@@ -70,6 +70,16 @@
       "database": "NCBI",
       "accession": "GCA_052148955.1",
       "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_052148955.1/"
+    },
+    {
+      "species": "Ruditapes philippinarum",
+      "assembly": "UNPD_Rphi1_1",
+      "version": "1",
+      "size": "1375 Mb",
+      "level": "Chromosome",
+      "database": "NCBI",
+      "accession": "GCA_982114075.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_982114075.1/"
     },
     {
       "species": "Ruditapes philippinarum",
@@ -300,16 +310,6 @@
       "database": "NCBI",
       "accession": "GCA_964656485.1",
       "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_964656485.1/"
-    },
-    {
-      "species": "Ruditapes philippinarum",
-      "assembly": "UNPD_Rphi1_1",
-      "version": "1",
-      "size": "0 Mb",
-      "level": "chromosome",
-      "database": "ENA",
-      "accession": "GCA_982114075",
-      "link": "https://www.ebi.ac.uk/ena/browser/view/GCA_982114075"
     }
   ]
 }
