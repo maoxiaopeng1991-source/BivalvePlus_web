@@ -1,6 +1,26 @@
 {
-  "last_updated": "2026-03-16T09:22:42.535531+00:00",
+  "last_updated": "2026-03-23T08:38:52.639002+00:00",
   "rows": [
+    {
+      "species": "Ruditapes decussatus",
+      "marker": "COI",
+      "gene": "cytochrome oxidase subunit I",
+      "sampling_site": "Various",
+      "samples": "142",
+      "database": "NCBI Nucleotide",
+      "accession": "txid104385+COI",
+      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid104385%5BOrganism%5D+AND+COI%5BTitle%5D"
+    },
+    {
+      "species": "Ruditapes decussatus",
+      "marker": "16S",
+      "gene": "16S ribosomal RNA",
+      "sampling_site": "Various",
+      "samples": "27",
+      "database": "NCBI Nucleotide",
+      "accession": "txid104385+16S",
+      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid104385%5BOrganism%5D+AND+16S%5BTitle%5D"
+    },
     {
       "species": "Ruditapes decussatus",
       "marker": "18S",
@@ -150,6 +170,16 @@
       "database": "NCBI Nucleotide",
       "accession": "txid29158+18S",
       "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid29158%5BOrganism%5D+AND+18S%5BTitle%5D"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "marker": "28S",
+      "gene": "28S ribosomal RNA",
+      "sampling_site": "Various",
+      "samples": "13",
+      "database": "NCBI Nucleotide",
+      "accession": "txid29158+28S",
+      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid29158%5BOrganism%5D+AND+28S%5BTitle%5D"
     },
     {
       "species": "Mytilus galloprovincialis",
