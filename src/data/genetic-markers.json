@@ -1,26 +1,6 @@
 {
-  "last_updated": "2026-03-23T08:38:52.639002+00:00",
+  "last_updated": "2026-03-30T10:43:47.275372+00:00",
   "rows": [
-    {
-      "species": "Ruditapes decussatus",
-      "marker": "COI",
-      "gene": "cytochrome oxidase subunit I",
-      "sampling_site": "Various",
-      "samples": "142",
-      "database": "NCBI Nucleotide",
-      "accession": "txid104385+COI",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid104385%5BOrganism%5D+AND+COI%5BTitle%5D"
-    },
-    {
-      "species": "Ruditapes decussatus",
-      "marker": "16S",
-      "gene": "16S ribosomal RNA",
-      "sampling_site": "Various",
-      "samples": "27",
-      "database": "NCBI Nucleotide",
-      "accession": "txid104385+16S",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid104385%5BOrganism%5D+AND+16S%5BTitle%5D"
-    },
     {
       "species": "Ruditapes decussatus",
       "marker": "18S",
@@ -63,16 +43,6 @@
     },
     {
       "species": "Ruditapes philippinarum",
-      "marker": "COI",
-      "gene": "cytochrome oxidase subunit I",
-      "sampling_site": "Various",
-      "samples": "483",
-      "database": "NCBI Nucleotide",
-      "accession": "txid129788+COI",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid129788%5BOrganism%5D+AND+COI%5BTitle%5D"
-    },
-    {
-      "species": "Ruditapes philippinarum",
       "marker": "16S",
       "gene": "16S ribosomal RNA",
       "sampling_site": "Various",
@@ -80,66 +50,6 @@
       "database": "NCBI Nucleotide",
       "accession": "txid129788+16S",
       "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid129788%5BOrganism%5D+AND+16S%5BTitle%5D"
-    },
-    {
-      "species": "Ruditapes philippinarum",
-      "marker": "18S",
-      "gene": "18S ribosomal RNA",
-      "sampling_site": "Various",
-      "samples": "80",
-      "database": "NCBI Nucleotide",
-      "accession": "txid129788+18S",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid129788%5BOrganism%5D+AND+18S%5BTitle%5D"
-    },
-    {
-      "species": "Ruditapes philippinarum",
-      "marker": "28S",
-      "gene": "28S ribosomal RNA",
-      "sampling_site": "Various",
-      "samples": "29",
-      "database": "NCBI Nucleotide",
-      "accession": "txid129788+28S",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid129788%5BOrganism%5D+AND+28S%5BTitle%5D"
-    },
-    {
-      "species": "Ruditapes philippinarum",
-      "marker": "ITS2",
-      "gene": "internal transcribed spacer 2",
-      "sampling_site": "Various",
-      "samples": "3",
-      "database": "NCBI Nucleotide",
-      "accession": "txid129788+ITS2",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid129788%5BOrganism%5D+AND+ITS2%5BTitle%5D"
-    },
-    {
-      "species": "Ruditapes philippinarum",
-      "marker": "cytb",
-      "gene": "cytochrome b",
-      "sampling_site": "Various",
-      "samples": "8",
-      "database": "NCBI Nucleotide",
-      "accession": "txid129788+cytb",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid129788%5BOrganism%5D+AND+cytb%5BTitle%5D"
-    },
-    {
-      "species": "Ruditapes philippinarum",
-      "marker": "COII",
-      "gene": "cytochrome oxidase subunit II",
-      "sampling_site": "Various",
-      "samples": "40",
-      "database": "NCBI Nucleotide",
-      "accession": "txid129788+COII",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid129788%5BOrganism%5D+AND+COII%5BTitle%5D"
-    },
-    {
-      "species": "Ruditapes philippinarum",
-      "marker": "H3",
-      "gene": "histone H3",
-      "sampling_site": "Various",
-      "samples": "26",
-      "database": "NCBI Nucleotide",
-      "accession": "txid129788+H3",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid129788%5BOrganism%5D+AND+H3%5BTitle%5D"
     },
     {
       "species": "Mytilus galloprovincialis",
@@ -153,16 +63,6 @@
     },
     {
       "species": "Mytilus galloprovincialis",
-      "marker": "16S",
-      "gene": "16S ribosomal RNA",
-      "sampling_site": "Various",
-      "samples": "1051",
-      "database": "NCBI Nucleotide",
-      "accession": "txid29158+16S",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid29158%5BOrganism%5D+AND+16S%5BTitle%5D"
-    },
-    {
-      "species": "Mytilus galloprovincialis",
       "marker": "18S",
       "gene": "18S ribosomal RNA",
       "sampling_site": "Various",
@@ -173,16 +73,6 @@
     },
     {
       "species": "Mytilus galloprovincialis",
-      "marker": "28S",
-      "gene": "28S ribosomal RNA",
-      "sampling_site": "Various",
-      "samples": "13",
-      "database": "NCBI Nucleotide",
-      "accession": "txid29158+28S",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid29158%5BOrganism%5D+AND+28S%5BTitle%5D"
-    },
-    {
-      "species": "Mytilus galloprovincialis",
       "marker": "ITS2",
       "gene": "internal transcribed spacer 2",
       "sampling_site": "Various",
@@ -190,106 +80,6 @@
       "database": "NCBI Nucleotide",
       "accession": "txid29158+ITS2",
       "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid29158%5BOrganism%5D+AND+ITS2%5BTitle%5D"
-    },
-    {
-      "species": "Mytilus galloprovincialis",
-      "marker": "cytb",
-      "gene": "cytochrome b",
-      "sampling_site": "Various",
-      "samples": "14",
-      "database": "NCBI Nucleotide",
-      "accession": "txid29158+cytb",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid29158%5BOrganism%5D+AND+cytb%5BTitle%5D"
-    },
-    {
-      "species": "Mytilus galloprovincialis",
-      "marker": "H3",
-      "gene": "histone H3",
-      "sampling_site": "Various",
-      "samples": "28",
-      "database": "NCBI Nucleotide",
-      "accession": "txid29158+H3",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid29158%5BOrganism%5D+AND+H3%5BTitle%5D"
-    },
-    {
-      "species": "Magallana gigas",
-      "marker": "COI",
-      "gene": "cytochrome oxidase subunit I",
-      "sampling_site": "Various",
-      "samples": "333",
-      "database": "NCBI Nucleotide",
-      "accession": "txid29159+COI",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid29159%5BOrganism%5D+AND+COI%5BTitle%5D"
-    },
-    {
-      "species": "Magallana gigas",
-      "marker": "16S",
-      "gene": "16S ribosomal RNA",
-      "sampling_site": "Various",
-      "samples": "61",
-      "database": "NCBI Nucleotide",
-      "accession": "txid29159+16S",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid29159%5BOrganism%5D+AND+16S%5BTitle%5D"
-    },
-    {
-      "species": "Magallana gigas",
-      "marker": "18S",
-      "gene": "18S ribosomal RNA",
-      "sampling_site": "Various",
-      "samples": "30",
-      "database": "NCBI Nucleotide",
-      "accession": "txid29159+18S",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid29159%5BOrganism%5D+AND+18S%5BTitle%5D"
-    },
-    {
-      "species": "Magallana gigas",
-      "marker": "28S",
-      "gene": "28S ribosomal RNA",
-      "sampling_site": "Various",
-      "samples": "61",
-      "database": "NCBI Nucleotide",
-      "accession": "txid29159+28S",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid29159%5BOrganism%5D+AND+28S%5BTitle%5D"
-    },
-    {
-      "species": "Magallana gigas",
-      "marker": "ITS1",
-      "gene": "internal transcribed spacer 1",
-      "sampling_site": "Various",
-      "samples": "11",
-      "database": "NCBI Nucleotide",
-      "accession": "txid29159+ITS1",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid29159%5BOrganism%5D+AND+ITS1%5BTitle%5D"
-    },
-    {
-      "species": "Magallana gigas",
-      "marker": "ITS2",
-      "gene": "internal transcribed spacer 2",
-      "sampling_site": "Various",
-      "samples": "6",
-      "database": "NCBI Nucleotide",
-      "accession": "txid29159+ITS2",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid29159%5BOrganism%5D+AND+ITS2%5BTitle%5D"
-    },
-    {
-      "species": "Magallana gigas",
-      "marker": "cytb",
-      "gene": "cytochrome b",
-      "sampling_site": "Various",
-      "samples": "1",
-      "database": "NCBI Nucleotide",
-      "accession": "txid29159+cytb",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid29159%5BOrganism%5D+AND+cytb%5BTitle%5D"
-    },
-    {
-      "species": "Magallana gigas",
-      "marker": "H3",
-      "gene": "histone H3",
-      "sampling_site": "Various",
-      "samples": "55",
-      "database": "NCBI Nucleotide",
-      "accession": "txid29159+H3",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid29159%5BOrganism%5D+AND+H3%5BTitle%5D"
     },
     {
       "species": "Ruditapes decussatus",
