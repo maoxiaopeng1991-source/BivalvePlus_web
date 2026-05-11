@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-04T08:19:43.582670+00:00",
+  "last_updated": "2026-05-11T09:00:26.662695+00:00",
   "rows": [
     {
       "species": "Ruditapes decussatus",
@@ -8233,28 +8233,6 @@
       "species": "Magallana gigas",
       "bioproject": "PRJNA1139757",
       "platform": "NextSeq 2000",
-      "data_size": "9.1 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR37450217",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR374/017/SRR37450217/SRR37450217_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR374/017/SRR37450217/SRR37450217_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA1139757",
-      "platform": "NextSeq 2000",
-      "data_size": "14.6 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR37450219",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR374/019/SRR37450219/SRR37450219_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR374/019/SRR37450219/SRR37450219_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA1139757",
-      "platform": "NextSeq 2000",
       "data_size": "6.3 Gb",
       "samples": "1",
       "database": "ENA",
@@ -8283,6 +8261,28 @@
       "accession": "SRR8959861",
       "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR895/001/SRR8959861/SRR8959861_1.fastq.gz",
       "link_r2": "NUL"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA1139757",
+      "platform": "NextSeq 2000",
+      "data_size": "9.1 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR37450217",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR374/017/SRR37450217/SRR37450217_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR374/017/SRR37450217/SRR37450217_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA1139757",
+      "platform": "NextSeq 2000",
+      "data_size": "14.6 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR37450219",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR374/019/SRR37450219/SRR37450219_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR374/019/SRR37450219/SRR37450219_2.fastq.gz"
     },
     {
       "species": "Magallana gigas",
