@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-22T11:37:27.640035+00:00",
+  "last_updated": "2026-06-29T10:25:20.797727+00:00",
   "rows": [
     {
       "species": "Ruditapes decussatus",
@@ -12356,6 +12356,17 @@
     },
     {
       "species": "Magallana gigas",
+      "bioproject": "PRJNA534417",
+      "platform": "BGISEQ-500",
+      "data_size": "105.6 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR8959859",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR895/009/SRR8959859/SRR8959859.fastq.gz",
+      "link_r2": "NUL"
+    },
+    {
+      "species": "Magallana gigas",
       "bioproject": "PRJNA70283",
       "platform": "Illumina HiSeq 2000",
       "data_size": "11.0 Gb",
@@ -13717,17 +13728,6 @@
       "accession": "SRR6063211",
       "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR606/001/SRR6063211/SRR6063211_1.fastq.gz",
       "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR606/001/SRR6063211/SRR6063211_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA394055",
-      "platform": "Illumina HiSeq 2000",
-      "data_size": "10.0 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR6063212",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR606/002/SRR6063212/SRR6063212_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR606/002/SRR6063212/SRR6063212_2.fastq.gz"
     },
     {
       "species": "Ruditapes decussatus",
