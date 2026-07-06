@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29T10:25:43.136760+00:00",
+  "last_updated": "2026-07-06T09:59:14.213563+00:00",
   "rows": [
     {
       "species": "Ruditapes decussatus",
@@ -290,46 +290,6 @@
       "database": "NCBI Nucleotide",
       "accession": "txid29159+H3",
       "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid29159%5BOrganism%5D+AND+H3%5BTitle%5D"
-    },
-    {
-      "species": "Ruditapes decussatus",
-      "marker": "COI",
-      "gene": "cytochrome oxidase subunit I",
-      "sampling_site": "Various",
-      "samples": "164",
-      "database": "BOLD",
-      "accession": "Ruditapes_decussatus",
-      "link": "https://www.boldsystems.org/index.php/Taxbrowser_Taxonpage?taxon=Ruditapes+decussatus"
-    },
-    {
-      "species": "Ruditapes philippinarum",
-      "marker": "COI",
-      "gene": "cytochrome oxidase subunit I",
-      "sampling_site": "Various",
-      "samples": "979",
-      "database": "BOLD",
-      "accession": "Ruditapes_philippinarum",
-      "link": "https://www.boldsystems.org/index.php/Taxbrowser_Taxonpage?taxon=Ruditapes+philippinarum"
-    },
-    {
-      "species": "Mytilus galloprovincialis",
-      "marker": "COI",
-      "gene": "cytochrome oxidase subunit I",
-      "sampling_site": "Various",
-      "samples": "667",
-      "database": "BOLD",
-      "accession": "Mytilus_galloprovincialis",
-      "link": "https://www.boldsystems.org/index.php/Taxbrowser_Taxonpage?taxon=Mytilus+galloprovincialis"
-    },
-    {
-      "species": "Magallana gigas",
-      "marker": "COI",
-      "gene": "cytochrome oxidase subunit I",
-      "sampling_site": "Various",
-      "samples": "445",
-      "database": "BOLD",
-      "accession": "Magallana_gigas",
-      "link": "https://www.boldsystems.org/index.php/Taxbrowser_Taxonpage?taxon=Magallana+gigas"
     }
   ]
 }
