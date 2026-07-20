@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-13T08:52:04.256546+00:00",
+  "last_updated": "2026-07-20T08:42:57.821123+00:00",
   "rows": [
     {
       "species": "Ruditapes decussatus",
@@ -1092,17 +1092,6 @@
     },
     {
       "species": "Ruditapes philippinarum",
-      "bioproject": "PRJNA352642",
-      "platform": "Illumina HiSeq 2500",
-      "data_size": "25.2 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR5100252",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR510/002/SRR5100252/SRR5100252_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR510/002/SRR5100252/SRR5100252_2.fastq.gz"
-    },
-    {
-      "species": "Ruditapes philippinarum",
       "bioproject": "PRJNA1224490",
       "platform": "Sequel II",
       "data_size": "99.6 Gb",
@@ -1155,6 +1144,17 @@
       "accession": "SRR32815930",
       "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR328/030/SRR32815930/SRR32815930_1.fastq.gz",
       "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR328/030/SRR32815930/SRR32815930_2.fastq.gz"
+    },
+    {
+      "species": "Ruditapes philippinarum",
+      "bioproject": "PRJNA352642",
+      "platform": "Illumina HiSeq 2500",
+      "data_size": "25.2 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR5100252",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR510/002/SRR5100252/SRR5100252_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR510/002/SRR5100252/SRR5100252_2.fastq.gz"
     },
     {
       "species": "Ruditapes philippinarum",
@@ -2643,6 +2643,28 @@
     },
     {
       "species": "Ruditapes philippinarum",
+      "bioproject": "PRJNA352642",
+      "platform": "Illumina HiSeq 2500",
+      "data_size": "43.0 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR5100249",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR510/009/SRR5100249/SRR5100249_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR510/009/SRR5100249/SRR5100249_2.fastq.gz"
+    },
+    {
+      "species": "Ruditapes philippinarum",
+      "bioproject": "PRJNA352642",
+      "platform": "Illumina HiSeq 2500",
+      "data_size": "21.8 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR5100250",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR510/000/SRR5100250/SRR5100250_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR510/000/SRR5100250/SRR5100250_2.fastq.gz"
+    },
+    {
+      "species": "Ruditapes philippinarum",
       "bioproject": "PRJNA482742",
       "platform": "Illumina HiSeq 2500",
       "data_size": "0.5 Gb",
@@ -3047,28 +3069,6 @@
       "accession": "SRR7589919",
       "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR758/009/SRR7589919/SRR7589919.fastq.gz",
       "link_r2": "NUL"
-    },
-    {
-      "species": "Ruditapes philippinarum",
-      "bioproject": "PRJNA352642",
-      "platform": "Illumina HiSeq 2500",
-      "data_size": "43.0 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR5100249",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR510/009/SRR5100249/SRR5100249_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR510/009/SRR5100249/SRR5100249_2.fastq.gz"
-    },
-    {
-      "species": "Ruditapes philippinarum",
-      "bioproject": "PRJNA352642",
-      "platform": "Illumina HiSeq 2500",
-      "data_size": "21.8 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR5100250",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR510/000/SRR5100250/SRR5100250_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR510/000/SRR5100250/SRR5100250_2.fastq.gz"
     },
     {
       "species": "Ruditapes philippinarum",
@@ -4788,6 +4788,28 @@
     },
     {
       "species": "Mytilus galloprovincialis",
+      "bioproject": "PRJNA246144",
+      "platform": "454 GS FLX Titanium",
+      "data_size": "0.3 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR1269704",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR126/004/SRR1269704/SRR1269704.fastq.gz",
+      "link_r2": "NUL"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "bioproject": "PRJNA246144",
+      "platform": "454 GS FLX Titanium",
+      "data_size": "0.3 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR1269719",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR126/009/SRR1269719/SRR1269719.fastq.gz",
+      "link_r2": "NUL"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
       "bioproject": "PRJEB25106",
       "platform": "Illumina HiSeq 2500",
       "data_size": "49.5 Gb",
@@ -4818,28 +4840,6 @@
       "accession": "ERR3169423",
       "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR316/003/ERR3169423/ERR3169423_1.fastq.gz",
       "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR316/003/ERR3169423/ERR3169423_2.fastq.gz"
-    },
-    {
-      "species": "Mytilus galloprovincialis",
-      "bioproject": "PRJNA246144",
-      "platform": "454 GS FLX Titanium",
-      "data_size": "0.3 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR1269704",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR126/004/SRR1269704/SRR1269704.fastq.gz",
-      "link_r2": "NUL"
-    },
-    {
-      "species": "Mytilus galloprovincialis",
-      "bioproject": "PRJNA246144",
-      "platform": "454 GS FLX Titanium",
-      "data_size": "0.3 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR1269719",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR126/009/SRR1269719/SRR1269719.fastq.gz",
-      "link_r2": "NUL"
     },
     {
       "species": "Mytilus galloprovincialis",
@@ -5547,127 +5547,6 @@
     },
     {
       "species": "Mytilus galloprovincialis",
-      "bioproject": "PRJNA1283247",
-      "platform": "Illumina HiSeq 2500",
-      "data_size": "29.2 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR34304942",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/042/SRR34304942/SRR34304942_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/042/SRR34304942/SRR34304942_2.fastq.gz"
-    },
-    {
-      "species": "Mytilus galloprovincialis",
-      "bioproject": "PRJNA1283247",
-      "platform": "Illumina HiSeq 2500",
-      "data_size": "68.9 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR34304943",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/043/SRR34304943/SRR34304943_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/043/SRR34304943/SRR34304943_2.fastq.gz"
-    },
-    {
-      "species": "Mytilus galloprovincialis",
-      "bioproject": "PRJNA1283247",
-      "platform": "Illumina HiSeq 2500",
-      "data_size": "34.1 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR34304944",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/044/SRR34304944/SRR34304944_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/044/SRR34304944/SRR34304944_2.fastq.gz"
-    },
-    {
-      "species": "Mytilus galloprovincialis",
-      "bioproject": "PRJNA1283247",
-      "platform": "Illumina HiSeq 2500",
-      "data_size": "28.0 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR34304945",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/045/SRR34304945/SRR34304945_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/045/SRR34304945/SRR34304945_2.fastq.gz"
-    },
-    {
-      "species": "Mytilus galloprovincialis",
-      "bioproject": "PRJNA1283247",
-      "platform": "Illumina HiSeq 2500",
-      "data_size": "52.1 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR34306388",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/088/SRR34306388/SRR34306388_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/088/SRR34306388/SRR34306388_2.fastq.gz"
-    },
-    {
-      "species": "Mytilus galloprovincialis",
-      "bioproject": "PRJNA1283247",
-      "platform": "Illumina HiSeq 2500",
-      "data_size": "30.6 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR34306389",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/089/SRR34306389/SRR34306389_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/089/SRR34306389/SRR34306389_2.fastq.gz"
-    },
-    {
-      "species": "Mytilus galloprovincialis",
-      "bioproject": "PRJNA1283247",
-      "platform": "Illumina HiSeq 2500",
-      "data_size": "35.8 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR34306395",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/095/SRR34306395/SRR34306395_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/095/SRR34306395/SRR34306395_2.fastq.gz"
-    },
-    {
-      "species": "Mytilus galloprovincialis",
-      "bioproject": "PRJNA1283247",
-      "platform": "Illumina HiSeq 2500",
-      "data_size": "34.4 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR34306397",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/097/SRR34306397/SRR34306397_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/097/SRR34306397/SRR34306397_2.fastq.gz"
-    },
-    {
-      "species": "Mytilus galloprovincialis",
-      "bioproject": "PRJNA1283247",
-      "platform": "Illumina HiSeq 2500",
-      "data_size": "27.2 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR34306398",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/098/SRR34306398/SRR34306398_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/098/SRR34306398/SRR34306398_2.fastq.gz"
-    },
-    {
-      "species": "Mytilus galloprovincialis",
-      "bioproject": "PRJNA1256442",
-      "platform": "Illumina HiSeq X",
-      "data_size": "3.9 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR33345044",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR333/044/SRR33345044/SRR33345044_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR333/044/SRR33345044/SRR33345044_2.fastq.gz"
-    },
-    {
-      "species": "Mytilus galloprovincialis",
-      "bioproject": "PRJNA1274216",
-      "platform": "MinION",
-      "data_size": "0.7 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR33906220",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR339/020/SRR33906220/SRR33906220_1.fastq.gz",
-      "link_r2": "NUL"
-    },
-    {
-      "species": "Mytilus galloprovincialis",
       "bioproject": "PRJNA515951",
       "platform": "Illumina HiSeq 4000",
       "data_size": "1.0 Gb",
@@ -5877,6 +5756,127 @@
     },
     {
       "species": "Mytilus galloprovincialis",
+      "bioproject": "PRJNA1283247",
+      "platform": "Illumina HiSeq 2500",
+      "data_size": "29.2 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR34304942",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/042/SRR34304942/SRR34304942_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/042/SRR34304942/SRR34304942_2.fastq.gz"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "bioproject": "PRJNA1283247",
+      "platform": "Illumina HiSeq 2500",
+      "data_size": "68.9 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR34304943",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/043/SRR34304943/SRR34304943_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/043/SRR34304943/SRR34304943_2.fastq.gz"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "bioproject": "PRJNA1283247",
+      "platform": "Illumina HiSeq 2500",
+      "data_size": "34.1 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR34304944",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/044/SRR34304944/SRR34304944_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/044/SRR34304944/SRR34304944_2.fastq.gz"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "bioproject": "PRJNA1283247",
+      "platform": "Illumina HiSeq 2500",
+      "data_size": "28.0 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR34304945",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/045/SRR34304945/SRR34304945_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/045/SRR34304945/SRR34304945_2.fastq.gz"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "bioproject": "PRJNA1283247",
+      "platform": "Illumina HiSeq 2500",
+      "data_size": "52.1 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR34306388",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/088/SRR34306388/SRR34306388_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/088/SRR34306388/SRR34306388_2.fastq.gz"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "bioproject": "PRJNA1283247",
+      "platform": "Illumina HiSeq 2500",
+      "data_size": "30.6 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR34306389",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/089/SRR34306389/SRR34306389_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/089/SRR34306389/SRR34306389_2.fastq.gz"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "bioproject": "PRJNA1283247",
+      "platform": "Illumina HiSeq 2500",
+      "data_size": "35.8 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR34306395",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/095/SRR34306395/SRR34306395_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/095/SRR34306395/SRR34306395_2.fastq.gz"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "bioproject": "PRJNA1283247",
+      "platform": "Illumina HiSeq 2500",
+      "data_size": "34.4 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR34306397",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/097/SRR34306397/SRR34306397_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/097/SRR34306397/SRR34306397_2.fastq.gz"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "bioproject": "PRJNA1283247",
+      "platform": "Illumina HiSeq 2500",
+      "data_size": "27.2 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR34306398",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/098/SRR34306398/SRR34306398_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/098/SRR34306398/SRR34306398_2.fastq.gz"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "bioproject": "PRJNA1256442",
+      "platform": "Illumina HiSeq X",
+      "data_size": "3.9 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR33345044",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR333/044/SRR33345044/SRR33345044_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR333/044/SRR33345044/SRR33345044_2.fastq.gz"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "bioproject": "PRJNA1274216",
+      "platform": "MinION",
+      "data_size": "0.7 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR33906220",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR339/020/SRR33906220/SRR33906220_1.fastq.gz",
+      "link_r2": "NUL"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
       "bioproject": "PRJEB66305",
       "platform": "Sequel",
       "data_size": "53.1 Gb",
@@ -5994,6 +5994,17 @@
       "database": "ENA",
       "accession": "ERR12379667",
       "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR123/067/ERR12379667/ERR12379667.fastq.gz",
+      "link_r2": "NUL"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "bioproject": "PRJEB88763",
+      "platform": "Revio",
+      "data_size": "70.4 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "ERR14886546",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR148/046/ERR14886546/ERR14886546.fastq.gz",
       "link_r2": "NUL"
     },
     {
@@ -6713,28 +6724,6 @@
     },
     {
       "species": "Mytilus galloprovincialis",
-      "bioproject": "PRJEB88763",
-      "platform": "Revio",
-      "data_size": "70.4 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "ERR14886546",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR148/046/ERR14886546/ERR14886546.fastq.gz",
-      "link_r2": "NUL"
-    },
-    {
-      "species": "Mytilus galloprovincialis",
-      "bioproject": "PRJNA262617",
-      "platform": "Illumina HiSeq 2000",
-      "data_size": "4.8 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR1598943",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR159/003/SRR1598943/SRR1598943_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR159/003/SRR1598943/SRR1598943_2.fastq.gz"
-    },
-    {
-      "species": "Mytilus galloprovincialis",
       "bioproject": "PRJNA785550",
       "platform": "Illumina NovaSeq 6000",
       "data_size": "143.9 Gb",
@@ -6743,17 +6732,6 @@
       "accession": "SRR17154976",
       "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR171/076/SRR17154976/SRR17154976_1.fastq.gz",
       "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR171/076/SRR17154976/SRR17154976_2.fastq.gz"
-    },
-    {
-      "species": "Mytilus galloprovincialis",
-      "bioproject": "PRJNA1019491",
-      "platform": "Illumina NovaSeq 6000",
-      "data_size": "64.8 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR26185990",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR261/090/SRR26185990/SRR26185990_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR261/090/SRR26185990/SRR26185990_2.fastq.gz"
     },
     {
       "species": "Mytilus galloprovincialis",
@@ -6919,6 +6897,28 @@
       "accession": "SRR34306407",
       "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/007/SRR34306407/SRR34306407_1.fastq.gz",
       "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR343/007/SRR34306407/SRR34306407_2.fastq.gz"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "bioproject": "PRJNA262617",
+      "platform": "Illumina HiSeq 2000",
+      "data_size": "4.8 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR1598943",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR159/003/SRR1598943/SRR1598943_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR159/003/SRR1598943/SRR1598943_2.fastq.gz"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "bioproject": "PRJNA1019491",
+      "platform": "Illumina NovaSeq 6000",
+      "data_size": "64.8 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR26185990",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR261/090/SRR26185990/SRR26185990_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR261/090/SRR26185990/SRR26185990_2.fastq.gz"
     },
     {
       "species": "Mytilus galloprovincialis",
@@ -7194,6 +7194,17 @@
       "accession": "ERR3169426",
       "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR316/006/ERR3169426/ERR3169426_1.fastq.gz",
       "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR316/006/ERR3169426/ERR3169426_2.fastq.gz"
+    },
+    {
+      "species": "Mytilus galloprovincialis",
+      "bioproject": "PRJEB24883",
+      "platform": "PacBio RS",
+      "data_size": "0.0 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "ERR4327922",
+      "link_r1": "https://www.ebi.ac.uk/ena/browser/view/ERR4327922",
+      "link_r2": "NUL"
     },
     {
       "species": "Mytilus galloprovincialis",
@@ -7879,17 +7890,6 @@
     },
     {
       "species": "Mytilus galloprovincialis",
-      "bioproject": "PRJEB24883",
-      "platform": "PacBio RS",
-      "data_size": "0.0 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "ERR4327922",
-      "link_r1": "https://www.ebi.ac.uk/ena/browser/view/ERR4327922",
-      "link_r2": "NUL"
-    },
-    {
-      "species": "Mytilus galloprovincialis",
       "bioproject": "PRJNA262617",
       "platform": "Illumina HiSeq 2000",
       "data_size": "18.8 Gb",
@@ -8484,6 +8484,94 @@
     },
     {
       "species": "Magallana gigas",
+      "bioproject": "PRJNA566001",
+      "platform": "Illumina HiSeq 4000",
+      "data_size": "63.8 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR10153337",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/037/SRR10153337/SRR10153337_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/037/SRR10153337/SRR10153337_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA566001",
+      "platform": "Illumina HiSeq 4000",
+      "data_size": "23.5 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR10153338",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/038/SRR10153338/SRR10153338_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/038/SRR10153338/SRR10153338_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA566001",
+      "platform": "Illumina HiSeq 4000",
+      "data_size": "25.5 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR10153340",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/040/SRR10153340/SRR10153340_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/040/SRR10153340/SRR10153340_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA566001",
+      "platform": "Illumina HiSeq 4000",
+      "data_size": "29.9 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR10153342",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/042/SRR10153342/SRR10153342_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/042/SRR10153342/SRR10153342_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA566001",
+      "platform": "Illumina HiSeq 4000",
+      "data_size": "29.5 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR10153343",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/043/SRR10153343/SRR10153343_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/043/SRR10153343/SRR10153343_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA566001",
+      "platform": "Illumina HiSeq 4000",
+      "data_size": "29.4 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR10153344",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/044/SRR10153344/SRR10153344_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/044/SRR10153344/SRR10153344_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA566001",
+      "platform": "Illumina HiSeq 4000",
+      "data_size": "50.5 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR10153351",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/051/SRR10153351/SRR10153351_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/051/SRR10153351/SRR10153351_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA566001",
+      "platform": "Illumina HiSeq 4000",
+      "data_size": "32.6 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR10153355",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/055/SRR10153355/SRR10153355_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/055/SRR10153355/SRR10153355_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
       "bioproject": "PRJNA592446",
       "platform": "Illumina MiSeq",
       "data_size": "0.0 Gb",
@@ -8924,190 +9012,47 @@
     },
     {
       "species": "Magallana gigas",
-      "bioproject": "PRJNA543621",
-      "platform": "HiSeq X Ten",
-      "data_size": "6.1 Gb",
+      "bioproject": "PRJNA598006",
+      "platform": "Sequel II",
+      "data_size": "11.8 Gb",
       "samples": "1",
       "database": "ENA",
-      "accession": "SRR13616503",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/003/SRR13616503/SRR13616503_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/003/SRR13616503/SRR13616503_2.fastq.gz"
+      "accession": "SRR10799913",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR107/013/SRR10799913/SRR10799913_subreads.fastq.gz",
+      "link_r2": "NUL"
     },
     {
       "species": "Magallana gigas",
-      "bioproject": "PRJNA543621",
-      "platform": "HiSeq X Ten",
-      "data_size": "7.5 Gb",
+      "bioproject": "PRJNA598006",
+      "platform": "Sequel II",
+      "data_size": "11.9 Gb",
       "samples": "1",
       "database": "ENA",
-      "accession": "SRR13616504",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/004/SRR13616504/SRR13616504_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/004/SRR13616504/SRR13616504_2.fastq.gz"
+      "accession": "SRR10799914",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR107/014/SRR10799914/SRR10799914_subreads.fastq.gz",
+      "link_r2": "NUL"
     },
     {
       "species": "Magallana gigas",
-      "bioproject": "PRJNA543621",
-      "platform": "HiSeq X Ten",
-      "data_size": "7.0 Gb",
+      "bioproject": "PRJNA598006",
+      "platform": "Sequel II",
+      "data_size": "12.1 Gb",
       "samples": "1",
       "database": "ENA",
-      "accession": "SRR13616510",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/010/SRR13616510/SRR13616510_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/010/SRR13616510/SRR13616510_2.fastq.gz"
+      "accession": "SRR10800306",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR108/006/SRR10800306/SRR10800306_subreads.fastq.gz",
+      "link_r2": "NUL"
     },
     {
       "species": "Magallana gigas",
-      "bioproject": "PRJNA543621",
-      "platform": "HiSeq X Ten",
-      "data_size": "5.9 Gb",
+      "bioproject": "PRJNA598006",
+      "platform": "Sequel II",
+      "data_size": "11.9 Gb",
       "samples": "1",
       "database": "ENA",
-      "accession": "SRR13616512",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/012/SRR13616512/SRR13616512_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/012/SRR13616512/SRR13616512_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA543621",
-      "platform": "HiSeq X Ten",
-      "data_size": "6.9 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR13616513",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/013/SRR13616513/SRR13616513_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/013/SRR13616513/SRR13616513_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA543621",
-      "platform": "HiSeq X Ten",
-      "data_size": "6.6 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR13616516",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/016/SRR13616516/SRR13616516_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/016/SRR13616516/SRR13616516_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA543621",
-      "platform": "HiSeq X Ten",
-      "data_size": "6.3 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR13616517",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/017/SRR13616517/SRR13616517_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/017/SRR13616517/SRR13616517_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA543621",
-      "platform": "HiSeq X Ten",
-      "data_size": "6.0 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR13616518",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/018/SRR13616518/SRR13616518_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/018/SRR13616518/SRR13616518_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA543621",
-      "platform": "HiSeq X Ten",
-      "data_size": "7.2 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR13616521",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/021/SRR13616521/SRR13616521_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/021/SRR13616521/SRR13616521_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA543621",
-      "platform": "HiSeq X Ten",
-      "data_size": "6.8 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR13616523",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/023/SRR13616523/SRR13616523_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/023/SRR13616523/SRR13616523_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA543621",
-      "platform": "HiSeq X Ten",
-      "data_size": "7.4 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR13616526",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/026/SRR13616526/SRR13616526_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/026/SRR13616526/SRR13616526_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA543621",
-      "platform": "HiSeq X Ten",
-      "data_size": "6.6 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR13616528",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/028/SRR13616528/SRR13616528_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/028/SRR13616528/SRR13616528_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA543621",
-      "platform": "HiSeq X Ten",
-      "data_size": "7.5 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR13616529",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/029/SRR13616529/SRR13616529_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/029/SRR13616529/SRR13616529_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA543621",
-      "platform": "HiSeq X Ten",
-      "data_size": "6.4 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR13616530",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/030/SRR13616530/SRR13616530_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/030/SRR13616530/SRR13616530_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA543621",
-      "platform": "HiSeq X Ten",
-      "data_size": "6.2 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR13616532",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/032/SRR13616532/SRR13616532_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/032/SRR13616532/SRR13616532_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA543621",
-      "platform": "HiSeq X Ten",
-      "data_size": "6.2 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR13616533",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/033/SRR13616533/SRR13616533_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/033/SRR13616533/SRR13616533_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA543621",
-      "platform": "HiSeq X Ten",
-      "data_size": "6.6 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR13616535",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/035/SRR13616535/SRR13616535_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/035/SRR13616535/SRR13616535_2.fastq.gz"
+      "accession": "SRR10800309",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR108/009/SRR10800309/SRR10800309_subreads.fastq.gz",
+      "link_r2": "NUL"
     },
     {
       "species": "Magallana gigas",
@@ -9507,6 +9452,193 @@
     },
     {
       "species": "Magallana gigas",
+      "bioproject": "PRJNA543621",
+      "platform": "HiSeq X Ten",
+      "data_size": "6.1 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR13616503",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/003/SRR13616503/SRR13616503_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/003/SRR13616503/SRR13616503_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA543621",
+      "platform": "HiSeq X Ten",
+      "data_size": "7.5 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR13616504",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/004/SRR13616504/SRR13616504_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/004/SRR13616504/SRR13616504_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA543621",
+      "platform": "HiSeq X Ten",
+      "data_size": "7.0 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR13616510",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/010/SRR13616510/SRR13616510_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/010/SRR13616510/SRR13616510_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA543621",
+      "platform": "HiSeq X Ten",
+      "data_size": "5.9 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR13616512",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/012/SRR13616512/SRR13616512_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/012/SRR13616512/SRR13616512_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA543621",
+      "platform": "HiSeq X Ten",
+      "data_size": "6.9 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR13616513",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/013/SRR13616513/SRR13616513_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/013/SRR13616513/SRR13616513_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA543621",
+      "platform": "HiSeq X Ten",
+      "data_size": "6.6 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR13616516",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/016/SRR13616516/SRR13616516_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/016/SRR13616516/SRR13616516_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA543621",
+      "platform": "HiSeq X Ten",
+      "data_size": "6.3 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR13616517",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/017/SRR13616517/SRR13616517_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/017/SRR13616517/SRR13616517_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA543621",
+      "platform": "HiSeq X Ten",
+      "data_size": "6.0 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR13616518",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/018/SRR13616518/SRR13616518_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/018/SRR13616518/SRR13616518_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA543621",
+      "platform": "HiSeq X Ten",
+      "data_size": "7.2 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR13616521",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/021/SRR13616521/SRR13616521_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/021/SRR13616521/SRR13616521_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA543621",
+      "platform": "HiSeq X Ten",
+      "data_size": "6.8 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR13616523",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/023/SRR13616523/SRR13616523_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/023/SRR13616523/SRR13616523_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA543621",
+      "platform": "HiSeq X Ten",
+      "data_size": "7.4 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR13616526",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/026/SRR13616526/SRR13616526_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/026/SRR13616526/SRR13616526_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA543621",
+      "platform": "HiSeq X Ten",
+      "data_size": "6.6 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR13616528",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/028/SRR13616528/SRR13616528_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/028/SRR13616528/SRR13616528_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA543621",
+      "platform": "HiSeq X Ten",
+      "data_size": "7.5 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR13616529",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/029/SRR13616529/SRR13616529_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/029/SRR13616529/SRR13616529_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA543621",
+      "platform": "HiSeq X Ten",
+      "data_size": "6.4 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR13616530",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/030/SRR13616530/SRR13616530_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/030/SRR13616530/SRR13616530_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA543621",
+      "platform": "HiSeq X Ten",
+      "data_size": "6.2 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR13616532",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/032/SRR13616532/SRR13616532_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/032/SRR13616532/SRR13616532_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA543621",
+      "platform": "HiSeq X Ten",
+      "data_size": "6.2 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR13616533",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/033/SRR13616533/SRR13616533_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/033/SRR13616533/SRR13616533_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA543621",
+      "platform": "HiSeq X Ten",
+      "data_size": "6.6 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR13616535",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/035/SRR13616535/SRR13616535_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR136/035/SRR13616535/SRR13616535_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
       "bioproject": "PRJNA663919",
       "platform": "Illumina HiSeq X",
       "data_size": "29.9 Gb",
@@ -9570,6 +9702,39 @@
       "accession": "SRR2015337",
       "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR201/007/SRR2015337/SRR2015337.fastq.gz",
       "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR201/007/SRR2015337/SRR2015337_1.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA277901",
+      "platform": "Illumina Genome Analyzer IIx",
+      "data_size": "11.8 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR2032163",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/003/SRR2032163/SRR2032163.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/003/SRR2032163/SRR2032163_1.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA277901",
+      "platform": "Illumina Genome Analyzer IIx",
+      "data_size": "9.9 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR2032164",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/004/SRR2032164/SRR2032164.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/004/SRR2032164/SRR2032164_1.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA277901",
+      "platform": "Illumina Genome Analyzer IIx",
+      "data_size": "12.8 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR2032170",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/000/SRR2032170/SRR2032170.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/000/SRR2032170/SRR2032170_1.fastq.gz"
     },
     {
       "species": "Magallana gigas",
@@ -11487,182 +11652,6 @@
     },
     {
       "species": "Magallana gigas",
-      "bioproject": "PRJNA566001",
-      "platform": "Illumina HiSeq 4000",
-      "data_size": "63.8 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR10153337",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/037/SRR10153337/SRR10153337_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/037/SRR10153337/SRR10153337_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA566001",
-      "platform": "Illumina HiSeq 4000",
-      "data_size": "23.5 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR10153338",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/038/SRR10153338/SRR10153338_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/038/SRR10153338/SRR10153338_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA566001",
-      "platform": "Illumina HiSeq 4000",
-      "data_size": "25.5 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR10153340",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/040/SRR10153340/SRR10153340_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/040/SRR10153340/SRR10153340_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA566001",
-      "platform": "Illumina HiSeq 4000",
-      "data_size": "29.9 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR10153342",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/042/SRR10153342/SRR10153342_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/042/SRR10153342/SRR10153342_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA566001",
-      "platform": "Illumina HiSeq 4000",
-      "data_size": "29.5 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR10153343",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/043/SRR10153343/SRR10153343_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/043/SRR10153343/SRR10153343_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA566001",
-      "platform": "Illumina HiSeq 4000",
-      "data_size": "29.4 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR10153344",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/044/SRR10153344/SRR10153344_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/044/SRR10153344/SRR10153344_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA566001",
-      "platform": "Illumina HiSeq 4000",
-      "data_size": "50.5 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR10153351",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/051/SRR10153351/SRR10153351_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/051/SRR10153351/SRR10153351_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA566001",
-      "platform": "Illumina HiSeq 4000",
-      "data_size": "32.6 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR10153355",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/055/SRR10153355/SRR10153355_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/055/SRR10153355/SRR10153355_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA598006",
-      "platform": "Sequel II",
-      "data_size": "11.8 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR10799913",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR107/013/SRR10799913/SRR10799913_subreads.fastq.gz",
-      "link_r2": "NUL"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA598006",
-      "platform": "Sequel II",
-      "data_size": "11.9 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR10799914",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR107/014/SRR10799914/SRR10799914_subreads.fastq.gz",
-      "link_r2": "NUL"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA598006",
-      "platform": "Sequel II",
-      "data_size": "12.1 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR10800306",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR108/006/SRR10800306/SRR10800306_subreads.fastq.gz",
-      "link_r2": "NUL"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA598006",
-      "platform": "Sequel II",
-      "data_size": "11.9 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR10800309",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR108/009/SRR10800309/SRR10800309_subreads.fastq.gz",
-      "link_r2": "NUL"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA277901",
-      "platform": "Illumina Genome Analyzer IIx",
-      "data_size": "11.8 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR2032163",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/003/SRR2032163/SRR2032163.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/003/SRR2032163/SRR2032163_1.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA277901",
-      "platform": "Illumina Genome Analyzer IIx",
-      "data_size": "9.9 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR2032164",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/004/SRR2032164/SRR2032164.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/004/SRR2032164/SRR2032164_1.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA277901",
-      "platform": "Illumina Genome Analyzer IIx",
-      "data_size": "12.8 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR2032170",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/000/SRR2032170/SRR2032170.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/000/SRR2032170/SRR2032170_1.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA557895",
-      "platform": "BGISEQ-500",
-      "data_size": "31.9 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR9945509",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR994/009/SRR9945509/SRR9945509.fastq.gz",
-      "link_r2": "NUL"
-    },
-    {
-      "species": "Magallana gigas",
       "bioproject": "PRJNA70283",
       "platform": "Illumina Genome Analyzer II",
       "data_size": "15.8 Gb",
@@ -12356,124 +12345,14 @@
     },
     {
       "species": "Magallana gigas",
-      "bioproject": "PRJNA534417",
+      "bioproject": "PRJNA557895",
       "platform": "BGISEQ-500",
-      "data_size": "105.6 Gb",
+      "data_size": "31.9 Gb",
       "samples": "1",
       "database": "ENA",
-      "accession": "SRR8959859",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR895/009/SRR8959859/SRR8959859.fastq.gz",
+      "accession": "SRR9945509",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR994/009/SRR9945509/SRR9945509.fastq.gz",
       "link_r2": "NUL"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA70283",
-      "platform": "Illumina HiSeq 2000",
-      "data_size": "11.0 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR327417",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327417/SRR327417_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327417/SRR327417_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA70283",
-      "platform": "Illumina HiSeq 2000",
-      "data_size": "11.8 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR327419",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327419/SRR327419_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327419/SRR327419_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA70283",
-      "platform": "Illumina HiSeq 2000",
-      "data_size": "12.1 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR327420",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327420/SRR327420_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327420/SRR327420_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA70283",
-      "platform": "Illumina HiSeq 2000",
-      "data_size": "19.1 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR327433",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327433/SRR327433_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327433/SRR327433_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA70283",
-      "platform": "Illumina HiSeq 2000",
-      "data_size": "3.7 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR327434",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327434/SRR327434_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327434/SRR327434_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA70283",
-      "platform": "Illumina HiSeq 2000",
-      "data_size": "4.7 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR327437",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327437/SRR327437_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327437/SRR327437_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA70283",
-      "platform": "Illumina HiSeq 2000",
-      "data_size": "17.3 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR327442",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327442/SRR327442_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327442/SRR327442_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA70283",
-      "platform": "Illumina HiSeq 2000",
-      "data_size": "4.3 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR327447",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327447/SRR327447_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327447/SRR327447_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA70283",
-      "platform": "Illumina HiSeq 2000",
-      "data_size": "19.9 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR327451",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327451/SRR327451_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327451/SRR327451_2.fastq.gz"
-    },
-    {
-      "species": "Magallana gigas",
-      "bioproject": "PRJNA70283",
-      "platform": "Illumina HiSeq 2000",
-      "data_size": "4.7 Gb",
-      "samples": "1",
-      "database": "ENA",
-      "accession": "SRR327452",
-      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327452/SRR327452_1.fastq.gz",
-      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327452/SRR327452_2.fastq.gz"
     },
     {
       "species": "Magallana gigas",
@@ -12837,6 +12716,116 @@
       "accession": "SRR33321730",
       "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR333/030/SRR33321730/SRR33321730_1.fastq.gz",
       "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR333/030/SRR33321730/SRR33321730_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA70283",
+      "platform": "Illumina HiSeq 2000",
+      "data_size": "11.0 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR327417",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327417/SRR327417_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327417/SRR327417_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA70283",
+      "platform": "Illumina HiSeq 2000",
+      "data_size": "11.8 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR327419",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327419/SRR327419_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327419/SRR327419_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA70283",
+      "platform": "Illumina HiSeq 2000",
+      "data_size": "12.1 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR327420",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327420/SRR327420_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327420/SRR327420_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA70283",
+      "platform": "Illumina HiSeq 2000",
+      "data_size": "19.1 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR327433",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327433/SRR327433_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327433/SRR327433_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA70283",
+      "platform": "Illumina HiSeq 2000",
+      "data_size": "3.7 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR327434",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327434/SRR327434_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327434/SRR327434_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA70283",
+      "platform": "Illumina HiSeq 2000",
+      "data_size": "4.7 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR327437",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327437/SRR327437_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327437/SRR327437_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA70283",
+      "platform": "Illumina HiSeq 2000",
+      "data_size": "17.3 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR327442",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327442/SRR327442_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327442/SRR327442_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA70283",
+      "platform": "Illumina HiSeq 2000",
+      "data_size": "4.3 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR327447",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327447/SRR327447_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327447/SRR327447_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA70283",
+      "platform": "Illumina HiSeq 2000",
+      "data_size": "19.9 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR327451",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327451/SRR327451_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327451/SRR327451_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA70283",
+      "platform": "Illumina HiSeq 2000",
+      "data_size": "4.7 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR327452",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327452/SRR327452_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR327/SRR327452/SRR327452_2.fastq.gz"
     },
     {
       "species": "Magallana gigas",
@@ -13728,6 +13717,17 @@
       "accession": "SRR6063211",
       "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR606/001/SRR6063211/SRR6063211_1.fastq.gz",
       "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR606/001/SRR6063211/SRR6063211_2.fastq.gz"
+    },
+    {
+      "species": "Magallana gigas",
+      "bioproject": "PRJNA394055",
+      "platform": "Illumina HiSeq 2000",
+      "data_size": "10.0 Gb",
+      "samples": "1",
+      "database": "ENA",
+      "accession": "SRR6063212",
+      "link_r1": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR606/002/SRR6063212/SRR6063212_1.fastq.gz",
+      "link_r2": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR606/002/SRR6063212/SRR6063212_2.fastq.gz"
     },
     {
       "species": "Ruditapes decussatus",
