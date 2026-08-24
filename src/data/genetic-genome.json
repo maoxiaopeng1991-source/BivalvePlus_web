@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-17T06:35:17.387830+00:00",
+  "last_updated": "2026-08-24T06:38:21.643296+00:00",
   "rows": [
     {
       "species": "Ruditapes decussatus",
@@ -240,6 +240,16 @@
       "database": "NCBI",
       "accession": "GCF_963853765.1",
       "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_963853765.1/"
+    },
+    {
+      "species": "Magallana gigas",
+      "assembly": "ASM6015441v1",
+      "version": "1",
+      "size": "592 Mb",
+      "level": "Complete Genome",
+      "database": "NCBI",
+      "accession": "GCA_060154415.1",
+      "link": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_060154415.1/"
     },
     {
       "species": "Magallana gigas",
