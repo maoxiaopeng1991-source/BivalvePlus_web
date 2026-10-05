@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-28T12:27:20.754344+00:00",
+  "last_updated": "2026-10-05T13:08:07.553996+00:00",
   "rows": [
     {
       "species": "Ruditapes decussatus",
@@ -286,7 +286,7 @@
       "marker": "H3",
       "gene": "histone H3",
       "sampling_site": "Various",
-      "samples": "55",
+      "samples": "56",
       "database": "NCBI Nucleotide",
       "accession": "txid29159+H3",
       "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid29159%5BOrganism%5D+AND+H3%5BTitle%5D"
