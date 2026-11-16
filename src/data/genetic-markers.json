@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-09T14:47:02.182749+00:00",
+  "last_updated": "2026-11-16T14:23:09.650570+00:00",
   "rows": [
     {
       "species": "Ruditapes decussatus",
@@ -223,36 +223,6 @@
     },
     {
       "species": "Magallana gigas",
-      "marker": "16S",
-      "gene": "16S ribosomal RNA",
-      "sampling_site": "Various",
-      "samples": "61",
-      "database": "NCBI Nucleotide",
-      "accession": "txid29159+16S",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid29159%5BOrganism%5D+AND+16S%5BTitle%5D"
-    },
-    {
-      "species": "Magallana gigas",
-      "marker": "18S",
-      "gene": "18S ribosomal RNA",
-      "sampling_site": "Various",
-      "samples": "30",
-      "database": "NCBI Nucleotide",
-      "accession": "txid29159+18S",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid29159%5BOrganism%5D+AND+18S%5BTitle%5D"
-    },
-    {
-      "species": "Magallana gigas",
-      "marker": "28S",
-      "gene": "28S ribosomal RNA",
-      "sampling_site": "Various",
-      "samples": "61",
-      "database": "NCBI Nucleotide",
-      "accession": "txid29159+28S",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid29159%5BOrganism%5D+AND+28S%5BTitle%5D"
-    },
-    {
-      "species": "Magallana gigas",
       "marker": "ITS1",
       "gene": "internal transcribed spacer 1",
       "sampling_site": "Various",
@@ -270,26 +240,6 @@
       "database": "NCBI Nucleotide",
       "accession": "txid29159+ITS2",
       "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid29159%5BOrganism%5D+AND+ITS2%5BTitle%5D"
-    },
-    {
-      "species": "Magallana gigas",
-      "marker": "cytb",
-      "gene": "cytochrome b",
-      "sampling_site": "Various",
-      "samples": "1",
-      "database": "NCBI Nucleotide",
-      "accession": "txid29159+cytb",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid29159%5BOrganism%5D+AND+cytb%5BTitle%5D"
-    },
-    {
-      "species": "Magallana gigas",
-      "marker": "H3",
-      "gene": "histone H3",
-      "sampling_site": "Various",
-      "samples": "56",
-      "database": "NCBI Nucleotide",
-      "accession": "txid29159+H3",
-      "link": "https://www.ncbi.nlm.nih.gov/nuccore/?term=txid29159%5BOrganism%5D+AND+H3%5BTitle%5D"
     }
   ]
 }
